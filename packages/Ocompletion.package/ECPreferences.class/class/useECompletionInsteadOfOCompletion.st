@@ -5,4 +5,4 @@ useECompletionInsteadOfOCompletion
 		category: 'OCompletion'
 		description: 'Decide if you want to use eCompletion in newly opened tools instead of OCompletion.'
 		type: #Boolean>
-	^useECompletionInsteadOfOCompletion ifNil: [ false ]
+	^useECompletionInsteadOfOCompletion ifNil: [ true ]
