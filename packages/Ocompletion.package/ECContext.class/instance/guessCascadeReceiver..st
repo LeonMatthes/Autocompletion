@@ -7,5 +7,8 @@ guessCascadeReceiver: aNumber
 		do: 
 			[ :index | 
 			type := (ranges at: index) type.
-			((#(#statementSeparator #assignment #ansiAssignment ) includes: type) or: [ (type beginsWith: 'pattern') or: [ type beginsWith: 'methodTemp' ] ]) ifTrue: [ ^ self guessTypeOf: index + 1 ] ].
+			((#(#statementSeparator #assignment #ansiAssignment ) includes: type)
+				 or: [ (type beginsWith: 'pattern') 
+					or: [ type beginsWith: 'methodTemp' ] ]) 
+				ifTrue: [ ^ self guessTypeOf: index + 1 ]].
 	^ nil
