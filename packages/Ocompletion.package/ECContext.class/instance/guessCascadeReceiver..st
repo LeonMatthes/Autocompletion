@@ -1,4 +1,4 @@
-private
+private-type-guessing
 guessCascadeReceiver: aNumber 
 	| type |
 	aNumber 

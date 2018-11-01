@@ -24,4 +24,5 @@ guessTypeOf: aNumber
 	range isInstanceVariable ifTrue: [ ^self guessInstVarClass: range ].
 	range isClassVariable ifTrue: [ ^self guessClassVarClass: range ].
 	range isGlobal ifTrue: [ ^self guessGlobal: aNumber ].
+	range type = #unary ifTrue: [^ self guessUnary: aNumber].
 	^nil

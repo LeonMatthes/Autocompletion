@@ -7,8 +7,7 @@ computeReceiverClass
 	found ifTrue: [^nil].
 	previous := ranges at: completionIndex - 1.
 	previous type = #cascadeSeparator 
-		ifTrue: [self haltOnce.
-			^self guessCascadeReceiver: completionIndex - 1].
+		ifTrue: [^self guessCascadeReceiver: completionIndex - 1].
 	(previous type = #unary 
 		and: [(self sourceOf: previous) = 'new' and: [completionIndex > 2]]) 
 			ifTrue: 

@@ -1,4 +1,4 @@
-private
+private-type-guessing
 guessTempVarClass: aString type: aSymbol 
 	| current type varName varType sourceIndex aClass |
 	aClass := controller guessTypeFor: aString.

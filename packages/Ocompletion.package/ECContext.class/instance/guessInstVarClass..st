@@ -1,4 +1,4 @@
-private
+private-type-guessing
 guessInstVarClass: aSHRange 
 	| aClass name |
 	name := self sourceOf: aSHRange.
