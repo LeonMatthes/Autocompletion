@@ -1,3 +1,4 @@
 OrderedDictionary {
+	'packages\/BaselineOfAutocompletion.package' : #SquotCypressCodeSerializer,
 	'packages\/Ocompletion.package' : #SquotCypressCodeSerializer
 }
