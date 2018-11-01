@@ -7,10 +7,10 @@ createTitle
 	transformationMorph := TransformationMorph new.
 	self addMorph: transformationMorph.
 	titleStringMorph := StringMorph new.
-	titleStringMorph font: self class titleFont.
+	titleStringMorph 
+		font: self class titleFont;
+		contents: titleString;
+		color: self class fontColor.
 	transformationMorph addMorph: titleStringMorph.
 	transformationMorph rotationDegrees: -90.0.
 	transformationMorph topLeft: (self topLeft + (0@12)).
-	titleStringMorph 
-		contents: titleString;
-		color: self class fontColor.
