@@ -6,10 +6,9 @@ baseline: spec
 		do: [
 			spec
 				package: 'Ocompletion';
-				package: 'OcompletionSqueakCompatibility' with: [spec requires: #('Ocompletion')];
 				yourself.
 			spec
-				group: 'default' with: #('Ocompletion' 'OcompletionSqueakCompatibility');
+				group: 'default' with: #('Ocompletion');
 				yourself.
 			spec
 				postLoadDoIt: #postLoad.]
