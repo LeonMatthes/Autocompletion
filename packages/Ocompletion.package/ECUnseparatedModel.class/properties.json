@@ -1,0 +1,14 @@
+{
+	"category" : "Ocompletion-ECModel",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ECUnseparatedModel",
+	"pools" : [
+		 ],
+	"super" : "ECUntypedModel",
+	"type" : "normal" }

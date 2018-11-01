@@ -1,0 +1,15 @@
+{
+	"category" : "Ocompletion",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"expanded",
+		"contextClass" ],
+	"name" : "OController",
+	"pools" : [
+		 ],
+	"super" : "ECController",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"class" : {
+		"definedByLiteral:" : "bar 12/2/2004 11:52",
+		"definedByMessageSend:" : "bar 12/2/2004 11:52",
+		"definedByTemporaryVar:" : "bar 12/2/2004 12:02" },
+	"instance" : {
+		"isDefinedByMessageSend" : "bar 12/2/2004 11:47",
+		"isDefinedByTemporary" : "bar 12/2/2004 11:47",
+		"priority" : "bar 12/2/2004 12:01",
+		"setType:kind:" : "bar 12/2/2004 12:01",
+		"temporaryOffset" : "bar 12/2/2004 12:02",
+		"temporaryOffset:" : "lr 7/4/2009 10:42",
+		"type" : "bar 12/2/2004 11:44",
+		"type:" : "lr 7/4/2009 10:42" } }

@@ -1,0 +1,14 @@
+{
+	"category" : "Ocompletion-ECModel",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ECGlobalEntry",
+	"pools" : [
+		 ],
+	"super" : "ECEntry",
+	"type" : "normal" }

@@ -1,0 +1,3 @@
+*Ocompletion
+isComment
+	^ type == #comment

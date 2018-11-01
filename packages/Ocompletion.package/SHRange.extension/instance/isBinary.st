@@ -1,0 +1,3 @@
+*Ocompletion
+isBinary
+	^type == #binary

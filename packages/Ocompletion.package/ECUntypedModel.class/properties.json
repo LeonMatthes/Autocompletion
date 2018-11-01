@@ -1,0 +1,18 @@
+{
+	"category" : "Ocompletion-ECModel",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"instVars",
+		"localVars",
+		"includeVariables",
+		"includeSelectors",
+		"classVars" ],
+	"name" : "ECUntypedModel",
+	"pools" : [
+		 ],
+	"super" : "ECModel",
+	"type" : "normal" }

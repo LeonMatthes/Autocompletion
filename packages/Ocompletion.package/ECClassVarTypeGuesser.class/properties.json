@@ -1,0 +1,14 @@
+{
+	"category" : "Ocompletion-ECModel",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ECClassVarTypeGuesser",
+	"pools" : [
+		 ],
+	"super" : "ECVarTypeGuesser",
+	"type" : "normal" }

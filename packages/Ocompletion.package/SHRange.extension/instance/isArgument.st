@@ -1,0 +1,4 @@
+*Ocompletion
+isArgument
+
+	^type == #methodArg

@@ -1,0 +1,23 @@
+{
+	"category" : "Ocompletion-ECView",
+	"classinstvars" : [
+		"messageFont",
+		"titleFont" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"selected",
+		"firstVisible",
+		"titleStringMorph",
+		"controller",
+		"context",
+		"pageHeight",
+		"itemHeight",
+		"detailMorph",
+		"detailPosition" ],
+	"name" : "ECMenuMorph",
+	"pools" : [
+		 ],
+	"super" : "BorderedMorph",
+	"type" : "normal" }

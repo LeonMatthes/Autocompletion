@@ -1,0 +1,3 @@
+*Ocompletion
+guessTypeForName: aString
+	^nil

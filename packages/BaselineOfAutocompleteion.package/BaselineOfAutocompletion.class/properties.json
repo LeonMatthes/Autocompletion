@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfAutocompleteion",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfAutocompletion",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }

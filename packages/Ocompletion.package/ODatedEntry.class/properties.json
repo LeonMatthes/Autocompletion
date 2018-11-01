@@ -1,0 +1,16 @@
+{
+	"category" : "Ocompletion",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"date",
+		"next",
+		"previous" ],
+	"name" : "ODatedEntry",
+	"pools" : [
+		 ],
+	"super" : "ECSelectorEntry",
+	"type" : "normal" }

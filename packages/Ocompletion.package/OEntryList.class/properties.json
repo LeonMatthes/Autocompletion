@@ -1,0 +1,16 @@
+{
+	"category" : "Ocompletion",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"size",
+		"entries",
+		"entryHead" ],
+	"name" : "OEntryList",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

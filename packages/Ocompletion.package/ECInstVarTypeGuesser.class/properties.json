@@ -1,0 +1,14 @@
+{
+	"category" : "Ocompletion-ECModel",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"varIndex" ],
+	"name" : "ECInstVarTypeGuesser",
+	"pools" : [
+		 ],
+	"super" : "ECVarTypeGuesser",
+	"type" : "normal" }

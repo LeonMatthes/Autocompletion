@@ -1,0 +1,20 @@
+{
+	"category" : "Ocompletion-ECSqueak",
+	"classinstvars" : [
+		"enabled",
+		"caseSensitive",
+		"smartCharacters",
+		"smartCharactersMapping",
+		"useECompletionInsteadOfOCompletion",
+		"matchSubStrings",
+		"keepSelectionAfterAddingSmartCharacters" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ECPreferences",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

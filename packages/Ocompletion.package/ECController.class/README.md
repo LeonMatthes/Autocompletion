@@ -1,0 +1,1 @@
+I live as an instance variable in a Browser, Debugger, Workspace or other window. I'm the glue between all participants of the completion system. I create the ECContext and pass myself to the ECMenuMorph. I process the keyboard events and pass them to the ECMenuMorph or close the morph if needed.

@@ -1,0 +1,8 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"methodRefs" : "lr 7/4/2009 10:42",
+		"popIntoLiteralVariable:" : "lr 7/4/2009 10:42",
+		"popIntoReceiverVariable:" : "bar 8/11/2005 13:07",
+		"send:super:numArgs:" : "bar 8/11/2005 13:14" } }

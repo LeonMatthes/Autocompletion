@@ -1,0 +1,16 @@
+{
+	"category" : "Ocompletion-ECModel",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"title",
+		"description",
+		"label" ],
+	"name" : "ECEntryDescription",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,17 @@
+{
+	"category" : "Ocompletion-ECModel",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"clazz",
+		"selectors",
+		"narrowString",
+		"entries" ],
+	"name" : "ECModel",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

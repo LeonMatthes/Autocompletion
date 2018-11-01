@@ -1,0 +1,4 @@
+*Ocompletion
+isGlobal
+
+	^type == #globalVar

@@ -1,0 +1,14 @@
+{
+	"category" : "Ocompletion",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"records" ],
+	"name" : "ORecentChanges",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

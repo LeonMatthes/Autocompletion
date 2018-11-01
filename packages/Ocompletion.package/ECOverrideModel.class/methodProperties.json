@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"computeReturn:" : "bar 12/6/2004 16:51",
+		"initializeSelectors" : "lr 7/4/2009 10:42",
+		"methodAt:" : "lr 6/19/2010 12:49",
+		"methodSourceAt:" : "ul 10/29/2010 06:02",
+		"title" : "bar 12/6/2004 15:02" } }

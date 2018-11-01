@@ -1,0 +1,18 @@
+{
+	"category" : "Ocompletion",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"table",
+		"expand",
+		"nextModel",
+		"cachedEntries",
+		"ctable" ],
+	"name" : "OModel",
+	"pools" : [
+		 ],
+	"super" : "ECUntypedModel",
+	"type" : "normal" }

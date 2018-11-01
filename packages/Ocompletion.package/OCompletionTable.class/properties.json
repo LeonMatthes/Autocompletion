@@ -1,0 +1,16 @@
+{
+	"category" : "Ocompletion",
+	"classinstvars" : [
+		"table",
+		"ctable" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"table",
+		"numberofEntries" ],
+	"name" : "OCompletionTable",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

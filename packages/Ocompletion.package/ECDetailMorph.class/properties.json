@@ -1,0 +1,18 @@
+{
+	"category" : "Ocompletion-ECView",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"title",
+		"description",
+		"arrowPosition",
+		"label",
+		"itemHeight" ],
+	"name" : "ECDetailMorph",
+	"pools" : [
+		 ],
+	"super" : "BorderedMorph",
+	"type" : "normal" }

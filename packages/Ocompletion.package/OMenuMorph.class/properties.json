@@ -1,0 +1,14 @@
+{
+	"category" : "Ocompletion",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"lastActivity" ],
+	"name" : "OMenuMorph",
+	"pools" : [
+		 ],
+	"super" : "ECMenuMorph",
+	"type" : "normal" }

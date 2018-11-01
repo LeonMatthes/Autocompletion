@@ -1,0 +1,20 @@
+{
+	"category" : "Ocompletion-ECView",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"model",
+		"menuMorph",
+		"editor",
+		"context",
+		"oppositeChar",
+		"caret",
+		"inverseMapping" ],
+	"name" : "ECController",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

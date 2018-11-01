@@ -1,0 +1,4 @@
+*Ocompletion
+isInstanceVariable
+	
+	^type == #instVar

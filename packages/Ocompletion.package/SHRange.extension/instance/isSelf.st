@@ -1,0 +1,4 @@
+*Ocompletion
+isSelf
+	
+	^type == #self
