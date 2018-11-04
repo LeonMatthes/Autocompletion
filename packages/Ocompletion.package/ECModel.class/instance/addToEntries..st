@@ -16,6 +16,7 @@ addToEntries: anOrderedCollection
 			ifFalse: [
 				(matchSubStrings and: [ index > 1 ]) ifTrue: [
 					innerMatching add: each ] ] ].
+
 	innerMatching sort.
 	frontMatching sort.
 	entries

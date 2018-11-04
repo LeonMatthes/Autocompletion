@@ -1,3 +1,6 @@
 as yet unclassified
-<= aECEntry 
-	^ contents <= aECEntry contents
+<= anECEntry 
+
+	^ self lastUse = anECEntry lastUse
+		ifTrue: [contents <= anECEntry contents]
+		ifFalse: [self lastUse >= anECEntry lastUse]

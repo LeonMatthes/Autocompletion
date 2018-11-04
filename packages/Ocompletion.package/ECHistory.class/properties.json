@@ -1,0 +1,14 @@
+{
+	"category" : "Ocompletion-ECHistory",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Instance" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"history" ],
+	"name" : "ECHistory",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
