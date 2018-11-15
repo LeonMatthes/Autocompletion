@@ -36,7 +36,7 @@ handleKeystrokeBefore: aKeyboardEvent editor: anEditor
 		ifTrue: [menuMorph showDetail.
 			^ true].
 	"Left Arrow"
-	(keyCharacter = Character arrowLeft and: [controlKeyPressed or: commandKeyPressed])
+	(keyCharacter = Character arrowLeft and: [controlKeyPressed or: commandKeyPressed] and: [menuMorph detailOpen])
 		ifTrue: [menuMorph hideDetail.
 			^ true].
 	"Arrow up"

@@ -9,11 +9,11 @@ drawMessageOn: aCanvas
 		color: Color gray.
 	rectangle := rectangle insetBy: 1.
 	aCanvas
-		drawString: '<- close detail'
+		drawString: 'ctrl + <- close detail'
 		in: rectangle
 		font: ECMenuMorph messageFont
 		color: Color gray.
-	browseMessage := 'browse ->'.
+	browseMessage := 'browse ctrl + ->'.
 	width := ECMenuMorph messageFont widthOfString: browseMessage .
 	aCanvas
 		drawString: browseMessage

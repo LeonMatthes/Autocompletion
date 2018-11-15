@@ -4,6 +4,7 @@ guessUnary: aNumber
 	| range name |
 	range := ranges at: aNumber.
 	name := self sourceOf: range.
-	^ name = 'new'
-		ifTrue: [self guessNewInstanceClass: aNumber]
-		ifFalse: [self guessUnaryAccessorClass: aNumber].
+	^ name caseOf: {
+			['new'] -> [self guessNewInstanceClass: aNumber].
+			['class'] -> [self guessClassUnary: aNumber]}
+		otherwise: [self guessUnaryAccessorClass: aNumber]
