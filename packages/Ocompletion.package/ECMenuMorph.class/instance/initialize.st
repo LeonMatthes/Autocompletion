@@ -1,9 +1,12 @@
 initialization
 initialize
 	super initialize.
-	self color: self class backgroundColor.
-	self borderWidth: 1.
-	self borderColor: self class borderColor.
+	self 
+		color: self backgroundColor;
+		borderWidth: 1;
+		borderColor: self dynamicBorderColor;
+		lastInteraction: DateAndTime now;
+		startStepping.
 	self
 		when: #positionChanged
 		send: #updateDetail

@@ -15,9 +15,11 @@
 		"pageHeight",
 		"itemHeight",
 		"detailMorph",
-		"detailPosition" ],
+		"detailPosition",
+		"lastInteraction",
+		"alpha" ],
 	"name" : "ECMenuMorph",
 	"pools" : [
 		 ],
-	"super" : "BorderedMorph",
+	"super" : "Morph",
 	"type" : "normal" }

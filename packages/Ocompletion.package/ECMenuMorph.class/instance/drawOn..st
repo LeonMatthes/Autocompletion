@@ -24,7 +24,7 @@ drawOn: aCanvas
 					index = self selected
 						ifTrue: [| rect | 
 							rect := rectangle withBottom: rectangle top + self class itemHeight.
-							aCanvas fillRectangle: rect color: self class scrollColor.
+							aCanvas fillRectangle: rect color: self scrollColor.
 							self detailPosition: rect topRight - (1@0)].
 					aCanvas
 						drawString: string

@@ -12,10 +12,12 @@ handleKeystrokeBefore: aKeyboardEvent editor: anEditor
 	controlKeyPressed := aKeyboardEvent controlKeyPressed.
 	commandKeyPressed := aKeyboardEvent commandKeyPressed.
 	isSpaceKey := keyCharacter = Character space.
+	
 	"Ctrl-Space or Tab for open"
 	self isMenuOpen
 		ifFalse: [^ self tryOpenMenuBefore: aKeyboardEvent editor: self editor].
 	
+	menuMorph notifyOfInteraction.
 	"Home"
 	(keyCharacter = Character home
 		or: [keyCharacter = Character arrowUp and: commandKeyPressed] "Mac compatiblity")

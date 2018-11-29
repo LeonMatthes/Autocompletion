@@ -8,4 +8,4 @@ drawModelMessageOn: aCanvas in: rectangle
 		drawString: message
 		in: (rectangle insetBy: 1)
 		font: self class messageFont
-		color: self class fontColor 
+		color: self fontColor 

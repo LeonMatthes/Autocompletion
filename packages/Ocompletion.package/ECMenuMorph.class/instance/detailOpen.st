@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 detailOpen
  
 	^ detailMorph isNil not

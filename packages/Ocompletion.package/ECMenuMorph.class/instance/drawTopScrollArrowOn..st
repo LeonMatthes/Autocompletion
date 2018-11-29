@@ -9,5 +9,5 @@ drawTopScrollArrowOn: aCanvas
 				with: (point translateBy: arrowHeight / 2 @ arrowHeight negated).
 	aCanvas 
 		drawPolygon: aPoligon 
-		fillStyle: self class scrollColor.
+		fillStyle: self scrollColor.
 	
