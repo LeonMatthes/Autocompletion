@@ -1,5 +1,8 @@
 accessing
 alpha: aNumber
 
+	| oldAlpha |
+	oldAlpha := alpha.
 	alpha := aNumber.
-	self changed.
+	oldAlpha ~= alpha
+		ifTrue: [self changed].
