@@ -1,4 +1,6 @@
 event handling
 handleMouseEnter: anEvent
-	self activeHand newKeyboardFocus: controller editor morph.
-	anEvent wasHandled: true.
+	
+	controller editor ifNotNil: 
+		[self activeHand newKeyboardFocus: controller editor morph.
+		anEvent wasHandled: true].
