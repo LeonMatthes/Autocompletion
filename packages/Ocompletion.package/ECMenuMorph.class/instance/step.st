@@ -1,9 +1,10 @@
 stepping and presenter
 step
 
-	self alpha: self calculateAlpha.
-	self alpha ~= 1
-		ifTrue: [self changed].
+	| newAlpha |
+	newAlpha := self calculateAlpha.
+	self alpha ~= newAlpha
+		ifTrue: [self alpha: newAlpha].
 	
 	self alpha <= 0
 		ifTrue: [self controller closeMenu]
