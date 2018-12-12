@@ -8,8 +8,10 @@
 	"instance" : {
 		"history" : "LM 11/4/2018 13:45",
 		"history:" : "LM 11/4/2018 13:45",
-		"initialize" : "LM 11/4/2018 14:07",
+		"initialize" : "LM 12/12/2018 16:30",
 		"lastUseOf:" : "LM 11/4/2018 13:51",
 		"leastUsedSymbol" : "LM 11/4/2018 14:19",
 		"maxHistorySize" : "LM 11/4/2018 14:22",
-		"nowUsed:" : "LM 11/4/2018 14:21" } }
+		"methodChanged:" : "LM 12/12/2018 16:29",
+		"nowUsed:" : "LM 11/4/2018 14:21",
+		"registerCompilationNotification" : "LM 12/12/2018 16:14" } }
