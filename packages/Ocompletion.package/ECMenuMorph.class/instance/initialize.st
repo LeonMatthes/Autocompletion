@@ -2,10 +2,11 @@ initialization
 initialize
 	super initialize.
 	self 
+		lastInteraction: DateAndTime now;
 		color: self backgroundColor;
+		alpha: self calculateAlpha;
 		borderWidth: 1;
 		borderColor: self dynamicBorderColor;
-		lastInteraction: DateAndTime now;
 		startStepping.
 	self
 		when: #positionChanged
