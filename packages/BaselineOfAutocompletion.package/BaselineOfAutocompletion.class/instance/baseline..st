@@ -5,10 +5,10 @@ baseline: spec
 		for: #'common'
 		do: [
 			spec
-				package: 'Ocompletion';
+				package: 'Autocompletion';
 				yourself.
 			spec
-				group: 'default' with: #('Ocompletion');
+				group: 'default' with: #('Autocompletion');
 				yourself.
 			spec
 				postLoadDoIt: #postLoad.]

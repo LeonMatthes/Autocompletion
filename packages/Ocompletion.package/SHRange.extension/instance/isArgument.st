@@ -1,4 +1,0 @@
-*Ocompletion
-isArgument
-
-	^type == #methodArg

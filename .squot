@@ -1,4 +1,4 @@
 OrderedDictionary {
-	'packages\/BaselineOfAutocompletion.package' : #SquotCypressCodeSerializer,
-	'packages\/Ocompletion.package' : #SquotCypressCodeSerializer
+	'packages\/Autocompletion.package' : #SquotCypressCodeSerializer,
+	'packages\/BaselineOfAutocompletion.package' : #SquotCypressCodeSerializer
 }

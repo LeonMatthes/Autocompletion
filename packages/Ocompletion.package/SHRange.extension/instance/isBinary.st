@@ -1,3 +1,0 @@
-*Ocompletion
-isBinary
-	^type == #binary

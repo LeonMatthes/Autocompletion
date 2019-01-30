@@ -1,4 +1,0 @@
-*Ocompletion
-isClassVariable
-
-	^type == #classVar

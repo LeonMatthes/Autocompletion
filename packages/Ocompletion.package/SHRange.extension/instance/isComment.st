@@ -1,3 +1,0 @@
-*Ocompletion
-isComment
-	^ type == #comment

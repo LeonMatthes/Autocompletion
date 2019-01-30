@@ -1,4 +1,0 @@
-*Ocompletion
-isSelf
-	
-	^type == #self

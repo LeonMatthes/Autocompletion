@@ -1,0 +1,14 @@
+{
+	"category" : "Autocompletion",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OContext",
+	"pools" : [
+		 ],
+	"super" : "ECContext",
+	"type" : "normal" }

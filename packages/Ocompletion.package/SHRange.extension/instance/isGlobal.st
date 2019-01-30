@@ -1,4 +1,0 @@
-*Ocompletion
-isGlobal
-
-	^type == #globalVar

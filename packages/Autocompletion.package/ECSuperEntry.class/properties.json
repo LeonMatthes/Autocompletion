@@ -1,0 +1,14 @@
+{
+	"category" : "Autocompletion-ECModel",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ECSuperEntry",
+	"pools" : [
+		 ],
+	"super" : "ECEntry",
+	"type" : "normal" }

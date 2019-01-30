@@ -1,0 +1,14 @@
+{
+	"category" : "Autocompletion-ECModel",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"expanded" ],
+	"name" : "ECTypedModel",
+	"pools" : [
+		 ],
+	"super" : "ECModel",
+	"type" : "normal" }

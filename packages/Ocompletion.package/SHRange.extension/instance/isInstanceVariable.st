@@ -1,4 +1,0 @@
-*Ocompletion
-isInstanceVariable
-	
-	^type == #instVar
