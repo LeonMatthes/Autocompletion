@@ -13,7 +13,7 @@ tryOpenMenuBefore: aKeyboardEvent editor: anEditor
 			ifFalse: [(self smartInput: aKeyboardEvent keyValue)
 					ifNotNil: [^ true]].
 
-	(controlKeyPressed not & commandKeyPressed not and: keyCharacter isAlphaNumeric and: [self editor isCaretBehindChar])
+	(self editorWantsMenu and: [self isSimpleKeyPress: aKeyboardEvent])
 		ifTrue: [self openMenuFor: self editor.
 			^ false].
 	
