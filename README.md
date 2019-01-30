@@ -9,6 +9,7 @@ Now install the Autocompletion using the following command:
 Metacello new
 	repository: 'github://MrModder/Autocompletion:master/packages';
 	baseline: 'Autocompletion';
+	get;
 	load.
 ```
 
