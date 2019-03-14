@@ -1,0 +1,4 @@
+*Autocompletion
+isSelf
+	
+	^type == #self

@@ -1,0 +1,3 @@
+*Autocompletion
+isComment
+	^ type == #comment

@@ -1,0 +1,4 @@
+*Autocompletion
+initializeCompletionController
+
+	^self addDependent: self createCompletionController

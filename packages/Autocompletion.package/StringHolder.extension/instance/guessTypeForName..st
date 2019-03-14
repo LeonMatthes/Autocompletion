@@ -1,0 +1,3 @@
+*Autocompletion
+guessTypeForName: aString
+	^nil

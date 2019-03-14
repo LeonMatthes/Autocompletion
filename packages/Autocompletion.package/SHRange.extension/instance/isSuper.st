@@ -1,0 +1,4 @@
+*Autocompletion
+isSuper
+	
+	^type == #super

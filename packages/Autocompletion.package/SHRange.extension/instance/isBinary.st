@@ -1,0 +1,3 @@
+*Autocompletion
+isBinary
+	^type == #binary

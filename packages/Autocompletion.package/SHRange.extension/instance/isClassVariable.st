@@ -1,0 +1,4 @@
+*Autocompletion
+isClassVariable
+
+	^type == #classVar

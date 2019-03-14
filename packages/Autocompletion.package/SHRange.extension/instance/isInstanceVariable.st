@@ -1,0 +1,4 @@
+*Autocompletion
+isInstanceVariable
+	
+	^type == #instVar

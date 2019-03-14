@@ -6,7 +6,7 @@ computeVarType
 	(hasSend and: [ info isDefinedByMessageSend not ]) ifTrue: 
 		[ info type: nil.
 		^ info ].
-	info isDefinedByTemporary not ifTrue: [ ^ info ].
+	info isDefinedByTemporary ifFalse: [ ^ info ].
 	tempNames := (receiverClass compilerClass new 
 		parse: currentMethod getSourceFromFile asString
 		in: receiverClass
