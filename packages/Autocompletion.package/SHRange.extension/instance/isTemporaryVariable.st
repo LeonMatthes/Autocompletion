@@ -1,4 +1,4 @@
 *Autocompletion
 isTemporaryVariable
 	
-	^#(#tempVar #blockTempVar workspaceVar ) identityIncludes: type
+	^#(#tempVar #blockTempVar #workspaceVar) identityIncludes: type

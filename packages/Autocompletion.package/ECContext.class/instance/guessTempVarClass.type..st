@@ -15,4 +15,4 @@ guessTempVarClass: aString type: aSymbol
 				[ (sourceIndex := self findSourceRangeFor: index) notNil ifTrue: 
 					[ type := self guessTypeOf: sourceIndex.
 					type ifNotNil: [ ^ type ] ] ] ].
-	^ nil
+	^ ECVarTypeGuesser getClassFromTypeSuggestingName: aString
