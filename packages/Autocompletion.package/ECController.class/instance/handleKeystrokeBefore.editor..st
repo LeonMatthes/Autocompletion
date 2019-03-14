@@ -19,14 +19,17 @@ handleKeystrokeBefore: aKeyboardEvent editor: anEditor
 	
 	menuMorph notifyOfInteraction.
 	"Home"
-	(keyCharacter = Character home
-		or: [keyCharacter = Character arrowUp and: commandKeyPressed] "Mac compatiblity")
-		ifTrue: [menuMorph home.
-			^ true].
+	(keyCharacter = Character home or: [keyCharacter = Character arrowUp and: commandKeyPressed] "Mac compatiblity")
+			ifTrue: [
+				^ menuMorph home
+					ifTrue: [true]
+					ifFalse: [self closeMenu. false]].
 	"End"
-	keyCharacter = Character end
-		ifTrue: [menuMorph end. 
-			^ true].
+	(keyCharacter = Character end or: [keyCharacter = Character arrowDown and: commandKeyPressed]"Mac compatibility")
+		ifTrue: [
+			^ menuMorph end
+				ifTrue: [true]
+				ifFalse: [self closeMenu. false]].
 	
 	"Help menu"
 	(keyCharacter = $h and:[controlKeyPressed or: commandKeyPressed]) 
