@@ -1,4 +1,5 @@
 accessing
 contextClass
+"legacy code"
 
-	^ECContext
+	^ self defaultContextClass

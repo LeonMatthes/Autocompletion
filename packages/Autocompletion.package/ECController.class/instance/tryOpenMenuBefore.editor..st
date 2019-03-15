@@ -1,22 +1,14 @@
 keyboard
 tryOpenMenuBefore: aKeyboardEvent editor: anEditor
 
-	| isSpaceKey controlKeyPressed keyCharacter commandKeyPressed |
-	isSpaceKey := aKeyboardEvent keyCharacter = Character space.
-	controlKeyPressed := aKeyboardEvent controlKeyPressed.
-	commandKeyPressed := aKeyboardEvent commandKeyPressed.
-	keyCharacter := aKeyboardEvent keyCharacter.
-	(isSpaceKey & controlKeyPressed)
-			ifTrue: [self openMenuFor: self editor.
-				^ true]
-			ifFalse: [(self smartInput: aKeyboardEvent keyValue)
-					ifNotNil: [^ true]].
+	(self isAutocompletionTriggeredByUser: aKeyboardEvent)
+		ifTrue: [self openMenuForCurrentEditor. ^ true].
 
-	(self editorWantsMenu and: [self isSimpleKeyPress: aKeyboardEvent])
-		ifTrue: [self openMenuFor: self editor.
-			^ false].
+	(self isAutocompletionTriggeredByText: aKeyboardEvent)
+		ifTrue: [self openMenuForCurrentEditor. ^ false].
 	
-	(ECPreferences smartTab and: keyCharacter = Character tab and: [aKeyboardEvent anyModifierKeyPressed not])
+	(ECPreferences smartTab and: aKeyboardEvent keyCharacter = Character tab and: [aKeyboardEvent anyModifierKeyPressed not])
 		ifTrue: [^ self smartTab: aKeyboardEvent].
 	
+	"^ self smartInput: aKeyboardEvent."
 	^ false

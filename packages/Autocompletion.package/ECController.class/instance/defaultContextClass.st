@@ -1,0 +1,4 @@
+constants
+defaultContextClass
+
+	^ ECContext
