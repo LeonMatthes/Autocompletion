@@ -1,3 +1,8 @@
 menu morph
 isMenuOpen
-	^menuMorph notNil and: [menuMorph itemsCount > 0 ifTrue: [true] ifFalse: [self closeMenu. false]]
+
+	^ self currentMenuMorph
+		ifNil: [false]
+		ifNotNil: [(self currentMenuMorph itemsCount > 0)
+			ifFalse: [self closeMenu. false "legacy code with side effects"]
+			ifTrue: [true]]

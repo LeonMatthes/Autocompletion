@@ -2,6 +2,9 @@ keyboard
 smartCharacter: aCharacter
 
 	| theEditor opposite previous next |
+	self flag: #legacy.
+	self flag: #todo.
+	self flag: #refactor.
 	theEditor := self editor ifNil: [ ^nil ].
 	theEditor hasSelection ifTrue: [
 		opposite := ECPreferences smartCharactersMapping at: aCharacter ifAbsent: [ ^nil ].
