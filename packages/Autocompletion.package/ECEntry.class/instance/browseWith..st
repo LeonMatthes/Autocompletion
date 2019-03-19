@@ -1,5 +1,5 @@
 as yet unclassified
-browseWith: anECContext 
+browseWith: anECContext
 	type := self guessTypeWith: anECContext.
 	type
 		ifNil: [^ false].
