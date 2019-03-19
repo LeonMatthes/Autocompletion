@@ -3,6 +3,7 @@ matchSubStrings
 
 	<preference: 'Match SubStrings'
 		category: 'OCompletion'
-		description: 'Decide if you want OCompletion to perform subString searches, which can be slower, rather than only front-matching selectors.'
+		description: 'Decide if you want OCompletion to perform subString searches, rather than only front-matching selectors.
+This does not have a significant performance impact.'
 		type: #Boolean>
-	^ matchSubStrings ifNil: [ false ]
+	^ matchSubStrings ifNil: [ true ]
