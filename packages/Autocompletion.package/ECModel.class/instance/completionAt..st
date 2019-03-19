@@ -1,3 +1,3 @@
 action
 completionAt: aNumber
-	^ (self at: aNumber) completion separateKeywords
+	^ (self at: aNumber) completion

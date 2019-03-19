@@ -1,3 +1,4 @@
 accessing
-initializeSelectors 
-	self subclassResponsibility 
+initializeSelectors
+
+	self subclassResponsibility

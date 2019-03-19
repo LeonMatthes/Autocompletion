@@ -1,3 +1,3 @@
 as yet unclassified
 completion
-	^ self contentsAsSymbol
+	^ self contentsAsSymbol separateKeywords

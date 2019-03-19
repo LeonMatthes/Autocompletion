@@ -3,12 +3,12 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
-	"commentStamp" : "",
+		"Hooks" ],
+	"commentStamp" : "LM 3/19/2019 14:18",
 	"instvars" : [
 		 ],
-	"name" : "ECUnseparatedModel",
+	"name" : "ECEntryHook",
 	"pools" : [
 		 ],
-	"super" : "ECUntypedModel",
+	"super" : "Object",
 	"type" : "normal" }
