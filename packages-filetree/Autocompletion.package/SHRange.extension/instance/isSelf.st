@@ -1,4 +1,0 @@
-*Autocompletion
-isSelf
-	
-	^type == #self

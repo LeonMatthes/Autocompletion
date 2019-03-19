@@ -1,4 +1,0 @@
-preferences
-listFont
-
-	^ECPreferences listFont

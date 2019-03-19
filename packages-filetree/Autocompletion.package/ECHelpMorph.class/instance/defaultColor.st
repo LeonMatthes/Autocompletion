@@ -1,3 +1,0 @@
-initialize
-defaultColor
-	^ ECMenuMorph backgroundColor

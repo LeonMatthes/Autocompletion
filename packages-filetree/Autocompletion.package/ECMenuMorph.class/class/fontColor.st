@@ -1,4 +1,0 @@
-preferences
-fontColor
-
-	^ ECPreferences menuFontColor

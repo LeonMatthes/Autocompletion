@@ -1,3 +1,0 @@
-*Autocompletion
-isComment
-	^ type == #comment

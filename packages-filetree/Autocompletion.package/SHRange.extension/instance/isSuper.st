@@ -1,4 +1,0 @@
-*Autocompletion
-isSuper
-	
-	^type == #super

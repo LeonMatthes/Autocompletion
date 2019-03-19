@@ -1,3 +1,0 @@
-*Autocompletion
-isBinary
-	^type == #binary
