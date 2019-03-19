@@ -8,7 +8,8 @@
 		"initializeWithPackages" : "MarianoMartinezPeck 4/15/2011 12:40",
 		"initializeWithRecentChanges" : "rr 4/16/2009 12:07",
 		"lookForOB" : "ul 11/6/2010 06:23",
-		"methodChanged:" : "rr 4/17/2009 15:00" },
+		"methodChanged:" : "rr 4/17/2009 15:00",
+		"reset" : "LM 3/19/2019 16:56" },
 	"instance" : {
 		"addEntry:" : "rr 4/9/2009 17:55",
 		"addEntry:date:" : "rr 4/15/2009 10:52",
