@@ -1,4 +1,4 @@
 accessing
 initializeSelectors
 
-	self subclassResponsibility
+	selectors addAll: ECEntryHook additionalSelectors.

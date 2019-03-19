@@ -1,4 +1,5 @@
 private
 initializeSelectors
 
-	self initializeSelectorsFor: clazz
+	self initializeSelectorsFor: clazz.
+	super initializeSelectors.

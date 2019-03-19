@@ -1,6 +1,7 @@
 private
 initializeSelectors
 	self resetSelectors.
+	super initializeSelectors.
 	includeSelectors ifFalse: 
 		[ Smalltalk environment keysDo: 
 			[ :each | 
