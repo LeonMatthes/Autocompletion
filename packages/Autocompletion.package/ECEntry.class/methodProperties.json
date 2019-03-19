@@ -2,11 +2,11 @@
 	"class" : {
 		"contents:type:" : "bar 8/13/2005 18:55" },
 	"instance" : {
-		"<=" : "LM 11/4/2018 14:08",
+		"<=" : "LM 3/19/2019 15:14",
 		"browseWith:" : "lr 3/29/2008 10:39",
 		"completion" : "LM 3/19/2019 13:50",
 		"contents" : "bar 8/13/2005 18:56",
-		"contentsAsSymbol" : "bar 10/5/2005 22:36",
+		"contentsAsSymbol" : "LM 3/19/2019 15:15",
 		"createDescriptionWith:" : "lr 7/4/2009 10:42",
 		"descriptionWith:" : "lr 7/4/2009 10:42",
 		"guessTypeWith:" : "bar 3/1/2006 15:27",
@@ -16,6 +16,6 @@
 		"label" : "bar 3/1/2006 15:40",
 		"lastUse" : "LM 11/4/2018 13:57",
 		"nowUsed" : "LM 11/4/2018 14:07",
-		"printOn:" : "bar 8/13/2005 19:08",
+		"printOn:" : "LM 3/19/2019 15:16",
 		"setContents:type:" : "lr 7/4/2009 10:42",
 		"type" : "bar 8/13/2005 18:56" } }

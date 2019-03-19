@@ -2,7 +2,7 @@ as yet unclassified
 printOn: aStream 
 	aStream nextPutAll: self class name;
 		 nextPut: $(;
-		 nextPutAll: contents;
+		 nextPutAll: self contents;
 		 nextPut: $,;
-		 nextPutAll: type;
+		 nextPutAll: self type;
 		 nextPut: $)

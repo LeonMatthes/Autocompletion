@@ -1,3 +1,3 @@
 as yet unclassified
 contentsAsSymbol
-	^ contents asSymbol 
+	^ self contents asSymbol 
