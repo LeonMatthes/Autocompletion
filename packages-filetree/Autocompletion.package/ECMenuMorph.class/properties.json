@@ -1,0 +1,25 @@
+{
+	"category" : "Autocompletion-ECView",
+	"classinstvars" : [
+		"messageFont",
+		"titleFont" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"selected",
+		"firstVisible",
+		"titleStringMorph",
+		"controller",
+		"context",
+		"pageHeight",
+		"itemHeight",
+		"detailMorph",
+		"detailPosition",
+		"lastInteraction",
+		"alpha" ],
+	"name" : "ECMenuMorph",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

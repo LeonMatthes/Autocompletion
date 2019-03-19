@@ -1,0 +1,3 @@
+preferences
+borderColor
+	^ Color gray

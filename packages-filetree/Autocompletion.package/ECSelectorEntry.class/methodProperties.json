@@ -1,0 +1,12 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"browseWith:" : "damiencassou 1/6/2009 14:04",
+		"createDescriptionWith:" : "bar 3/8/2006 21:42",
+		"findMethodWith:do:ifAbsent:" : "bar 3/20/2006 16:15",
+		"implementorsDescription:" : "lr 7/4/2009 10:42",
+		"label" : "bar 3/2/2006 21:52",
+		"lookupSelector:class:" : "bar 3/20/2006 15:38",
+		"methodSourceDescription:method:" : "bar 3/30/2006 14:17",
+		"methodSourceOn:" : "rjl 12/11/2008 21:07" } }

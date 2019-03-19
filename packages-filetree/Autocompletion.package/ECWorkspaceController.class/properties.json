@@ -1,0 +1,14 @@
+{
+	"category" : "Autocompletion-ECView",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "ECWorkspaceController",
+	"pools" : [
+		 ],
+	"super" : "ECController",
+	"type" : "normal" }

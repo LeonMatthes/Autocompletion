@@ -1,0 +1,3 @@
+as yet unclassified
+initializeWithRecentChanges
+	ORecentChanges new readRecentChanges fillCompletionTable.

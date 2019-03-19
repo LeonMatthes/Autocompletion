@@ -1,0 +1,4 @@
+*Autocompletion
+isArgument
+
+	^type == #methodArg

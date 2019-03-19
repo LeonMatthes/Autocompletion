@@ -1,0 +1,4 @@
+preferences
+scrollColor
+
+	^ECPreferences menuSelectionColor 

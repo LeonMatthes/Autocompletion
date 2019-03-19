@@ -1,0 +1,14 @@
+{
+	"category" : "Autocompletion-ECSqueak",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ECSymbols",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,4 @@
+*Autocompletion
+isGlobal
+
+	^type == #globalVar

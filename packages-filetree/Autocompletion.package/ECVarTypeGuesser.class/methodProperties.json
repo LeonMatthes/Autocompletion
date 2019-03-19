@@ -1,0 +1,23 @@
+{
+	"class" : {
+		"getClassFromTypeSuggestingName:" : "LM 10/31/2018 13:26",
+		"variableName:class:" : "bar 12/8/2004 13:47",
+		"variableName:source:class:" : "lr 7/4/2009 10:42" },
+	"instance" : {
+		"blockReturnTop" : "lr 7/4/2009 10:42",
+		"computeVarType" : "LM 3/14/2019 17:20",
+		"initialize" : "bar 12/13/2004 17:26",
+		"interpretNextInstructionUsing:" : "bar 12/1/2004 21:47",
+		"methodRefs" : "bar 3/20/2006 15:59",
+		"perform" : "ul 9/29/2010 22:00",
+		"popIntoLiteralVariable:" : "bar 8/11/2005 13:03",
+		"popIntoTemporaryVariable:" : "bar 12/13/2004 17:08",
+		"prepare:" : "bar 8/11/2005 13:19",
+		"pushActiveContext" : "lr 7/4/2009 10:42",
+		"pushConstant:" : "lr 7/4/2009 10:42",
+		"pushLiteralVariable:" : "bar 12/13/2004 17:15",
+		"pushTemporaryVariable:" : "bar 12/13/2004 17:15",
+		"reset" : "bar 12/13/2004 17:14",
+		"send:super:numArgs:" : "bar 12/13/2004 17:15",
+		"setVariableName:source:class:" : "bar 12/13/2004 13:55",
+		"typeOfVarIn:" : "lr 7/4/2009 10:42" } }
