@@ -1,22 +1,11 @@
 private
 initializeSelectors
+
 	self resetSelectors.
 	super initializeSelectors.
-	includeSelectors ifFalse: 
-		[ Smalltalk environment keysDo: 
-			[ :each | 
-			selectors add: (ECGlobalEntry 
-					contents: each
-					type: #globalVar) ].
-		^ self ].
+	(includeSelectors and: [ECPreferences includeSelectors])
+		ifFalse: [^ self initializeGlobalsSelectors ].
+
 	narrowString ifEmpty: [ ^ self ].
-	ECSymbols 
-		contains: narrowString
-		caseSensitive: ECPreferences caseSensitive
-		do: 
-			[ :each | 
-			(includeVariables or: [ each first isLowercase ]) ifTrue: 
-				[ selectors add: (ECSelectorEntry 
-						contents: each
-						type: #selector).
-				selectors size > 500 ifTrue: [ ^ self ] ] ]
+	
+	self initializeSymbolSelectors.
