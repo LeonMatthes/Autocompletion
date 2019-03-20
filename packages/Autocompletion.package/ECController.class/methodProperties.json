@@ -4,6 +4,7 @@
 		"model:" : "bar 12/13/2004 12:05" },
 	"instance" : {
 		"additionals" : "bar 12/16/2004 11:13",
+		"allowOverriding" : "LM 3/20/2019 18:16",
 		"closeMenu" : "ul 2/9/2011 03:53",
 		"context" : "bar 12/13/2004 12:08",
 		"contextClass" : "ul 2/9/2011 02:56",

@@ -1,0 +1,14 @@
+{
+	"category" : "Autocompletion-ECView",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ECBrowserController",
+	"pools" : [
+		 ],
+	"super" : "ECController",
+	"type" : "normal" }

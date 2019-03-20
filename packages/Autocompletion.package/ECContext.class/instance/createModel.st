@@ -3,7 +3,7 @@ createModel
 	| modelClass |
 	self receiverClass
 		ifNotNil: [^ ECTypedModel class: receiverClass].
-	(controller workspace isNil
+	(controller allowOverriding
 		and: [theClass notNil])
 		ifTrue: [completionIndex = 1
 				ifTrue: [^ ECOverrideModel class: theClass]].
