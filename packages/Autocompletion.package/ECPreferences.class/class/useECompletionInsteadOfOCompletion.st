@@ -4,6 +4,6 @@ useECompletionInsteadOfOCompletion
 	<preference: 'Use Autocompletion instead of OCompletion'
 		category: 'Autocompletion'
 		description: 'Decide if you want to use Autocompletion in newly opened tools instead of OCompletion.
-eCompletion is recommended'
+Autocompletion is recommended.'
 		type: #Boolean>
 	^useECompletionInsteadOfOCompletion ifNil: [ true ]
