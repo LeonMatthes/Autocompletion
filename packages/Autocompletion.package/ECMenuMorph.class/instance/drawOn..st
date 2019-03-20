@@ -26,11 +26,9 @@ drawOn: aCanvas
 							rect := rectangle withBottom: rectangle top + self class itemHeight.
 							aCanvas fillRectangle: rect color: self scrollColor.
 							self detailPosition: rect topRight - (1@0)].
-					aCanvas
-						drawString: string
-						in: (rectangle insetBy: 1)
-						font: (self selectFont: type)
-						color: textColor.
+					symbol 
+						drawOn: (ClippingCanvas canvas: aCanvas clipRect: rectangle)
+						in: rectangle.
 					rectangle := self prepareRectForNextRow: rectangle]].
 	"tweak rectangle to display message"
 	rectangle := rectangle top: (self bounds bottom - self class messageHeight).
