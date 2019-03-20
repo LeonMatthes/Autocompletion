@@ -1,6 +1,6 @@
 drawing
 drawOn: aCanvas 
-	| rectangle model textColor |
+	| rectangle model |
 	super drawOn: aCanvas.
 	self drawTitleOn: aCanvas.
 	rectangle := self bounds copy.
@@ -8,28 +8,9 @@ drawOn: aCanvas
 	rectangle := rectangle left: rectangle left + 20.
 	model := context model.
 	self extent: self extent.
-	self firstVisible > 1
-		ifTrue: [self drawTopScrollArrowOn: aCanvas].
-	self lastVisible ~= self itemsCount
-		ifTrue: [self drawBottomScrollArrowOn: aCanvas].
+	self drawArrowsOn: aCanvas.
 	model notEmpty
-		ifTrue: [self firstVisible
-				to: self lastVisible
-				do: [:index | 
-					| symbol type string | 
-					symbol := model entries at: index.
-					string := symbol contents.
-					type := symbol type.
-					textColor := self selectColor: type.
-					index = self selected
-						ifTrue: [| rect | 
-							rect := rectangle withBottom: rectangle top + self class itemHeight.
-							aCanvas fillRectangle: rect color: self scrollColor.
-							self detailPosition: rect topRight - (1@0)].
-					symbol 
-						drawOn: (ClippingCanvas canvas: aCanvas clipRect: rectangle)
-						in: rectangle.
-					rectangle := self prepareRectForNextRow: rectangle]].
+		ifTrue: [self drawEntriesOn: aCanvas in: rectangle].
 	"tweak rectangle to display message"
 	rectangle := rectangle top: (self bounds bottom - self class messageHeight).
 	self drawMessageOn: aCanvas in: rectangle
