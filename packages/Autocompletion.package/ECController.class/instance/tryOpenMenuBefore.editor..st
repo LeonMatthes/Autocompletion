@@ -6,8 +6,7 @@ tryOpenMenuBefore: aKeyboardEvent editor: anEditor
 	controlKeyPressed := aKeyboardEvent controlKeyPressed.
 	commandKeyPressed := aKeyboardEvent commandKeyPressed.
 	keyCharacter := aKeyboardEvent keyCharacter.
-	(isSpaceKey & controlKeyPressed
-		or: [keyCharacter = Character tab and: [self editor isCaretBehindChar and: [controlKeyPressed not]]])
+	(isSpaceKey & controlKeyPressed)
 			ifTrue: [self openMenuFor: self editor.
 				^ true]
 			ifFalse: [(self smartInput: aKeyboardEvent keyValue)
@@ -16,5 +15,8 @@ tryOpenMenuBefore: aKeyboardEvent editor: anEditor
 	(self editorWantsMenu and: [self isSimpleKeyPress: aKeyboardEvent])
 		ifTrue: [self openMenuFor: self editor.
 			^ false].
+	
+	(keyCharacter = Character tab and: [aKeyboardEvent anyModifierKeyPressed not])
+		ifTrue: [^ self smartTab: aKeyboardEvent].
 	
 	^ false
