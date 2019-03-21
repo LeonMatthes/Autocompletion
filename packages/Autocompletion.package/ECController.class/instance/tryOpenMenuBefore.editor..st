@@ -16,7 +16,7 @@ tryOpenMenuBefore: aKeyboardEvent editor: anEditor
 		ifTrue: [self openMenuFor: self editor.
 			^ false].
 	
-	(keyCharacter = Character tab and: [aKeyboardEvent anyModifierKeyPressed not])
+	(ECPreferences smartTab and: keyCharacter = Character tab and: [aKeyboardEvent anyModifierKeyPressed not])
 		ifTrue: [^ self smartTab: aKeyboardEvent].
 	
 	^ false

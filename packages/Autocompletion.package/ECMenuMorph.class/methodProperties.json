@@ -64,7 +64,7 @@
 		"home" : "LM 3/14/2019 18:03",
 		"initialize" : "LM 12/12/2018 16:10",
 		"insertCompletion:" : "LM 3/20/2019 21:46",
-		"insertSelected" : "LM 11/4/2018 14:08",
+		"insertSelected" : "LM 3/21/2019 18:22",
 		"isClosed" : "bar 12/13/2004 16:14",
 		"itemHeight" : "MAD 10/8/2009 14:03",
 		"itemHeight:" : "LM 11/19/2018 14:39",
@@ -102,4 +102,5 @@
 		"titleStringMorph" : "LM 11/19/2018 14:39",
 		"titleStringMorph:" : "LM 11/19/2018 14:39",
 		"updateDetail" : "bar 3/3/2006 22:52",
+		"validateCompletion:" : "LM 3/21/2019 18:23",
 		"visibleItemsCount" : "pk 6/3/2004 16:31" } }

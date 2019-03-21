@@ -8,7 +8,8 @@
 		"useECompletionInsteadOfOCompletion",
 		"matchSubStrings",
 		"keepSelectionAfterAddingSmartCharacters",
-		"includeSelectors" ],
+		"includeSelectors",
+		"smartTab" ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
