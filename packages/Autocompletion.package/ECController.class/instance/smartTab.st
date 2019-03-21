@@ -1,4 +1,4 @@
-keyboard
+smart tabbing
 smartTab
 
 	| jumpIndex |
@@ -9,5 +9,5 @@ smartTab
 	^ jumpIndex > 0
 		ifTrue: [self editor 
 					selectFrom: jumpIndex 
-					to: jumpIndex +ECPreferences smartTabString size - 1];
+					to: jumpIndex + ECPreferences smartTabString size - 1];
 		yourself

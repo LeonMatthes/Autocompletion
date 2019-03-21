@@ -1,4 +1,4 @@
-keyboard
+smart tabbing
 reverseSmartTab
 
 	| jumpIndex searchText selectionStart |
@@ -8,6 +8,6 @@ reverseSmartTab
 
 	^ jumpIndex > 0
 		ifTrue: [self editor 
-			selectFrom: selectionStart - jumpIndex - ECPreferences smartTabString size + 1
-			to: selectionStart - jumpIndex ];
+					selectFrom: selectionStart - jumpIndex - ECPreferences smartTabString size + 1
+					to: selectionStart - jumpIndex ];
 		yourself
