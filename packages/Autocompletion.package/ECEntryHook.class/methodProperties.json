@@ -1,6 +1,7 @@
 {
 	"class" : {
-		"additionalSelectors" : "LM 3/19/2019 19:12",
+		"additionalSelectors" : "LM 3/21/2019 19:52",
+		"additionalSelectorsFor:" : "LM 3/21/2019 19:52",
 		"hooks" : "LM 3/19/2019 14:33",
 		"hooks:" : "LM 3/19/2019 14:16",
 		"registerHook:named:" : "LM 3/19/2019 14:17",
