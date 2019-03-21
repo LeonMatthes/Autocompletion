@@ -15,10 +15,16 @@ helpText
 		shortcut: 'usage 2'
 		text: 'select some text, enter a smart character and the selected text get surrounded by the opening and closing character.'
 		on: stream.
+		
+		
 	self section: 'open/close menu' on: stream.
 	self
-		shortcut: 'ctrl-space or tab'
+		shortcut: 'ctrl-space'
 		text: 'open the completion menu'
+		on: stream.
+	self
+		shortcut: 'ctrl-space or tab'
+		text: 'close the menu and insert selected completion.'
 		on: stream.
 	self
 		shortcut: 'ESC'
@@ -28,6 +34,17 @@ helpText
 		shortcut: 'ctrl + h'
 		text: 'open this help'
 		on: stream.
+		
+	self section: 'Smart Tabbing' on: stream.
+	self
+		shortcut: 'tab'
+		text: 'select the next place to insert Text'
+		on: stream.
+	self
+		shortcut: 'shift + tab'
+		text: 'select the last place to insert Text'
+		on: stream.
+		
 	self section: 'menu navigation' on: stream.
 	self
 		shortcut: 'Arrows up/down'
@@ -41,6 +58,8 @@ helpText
 		shortcut: 'Home/End'
 		text: 'move to first or last page of the menu'
 		on: stream.
+		
+		
 	self section: 'show details and browse' on: stream.
 	self
 		shortcut: 'ctrl + right arrow (detail closed)'
@@ -54,6 +73,8 @@ helpText
 		shortcut: 'ctrl + left arrow'
 		text: 'close the details'
 		on: stream.
+	
+
 	self section: 'changing menu contents' on: stream.
 	self
 		shortcut: 'ctrl-u'
@@ -71,9 +92,5 @@ helpText
 		shortcut: 'backspace'
 		text: 'delete an input character, adjust menu to the new input.'
 		on: stream.
-	self section: 'inserting completion' on: stream.
-	self
-		shortcut: 'ctrl-space or tab'
-		text: 'close the menu and insert selected completion. if there only one item left in the menu this is done automaticly.'
-		on: stream.
+		
 	^ stream contents
