@@ -9,7 +9,8 @@
 		"matchSubStrings",
 		"keepSelectionAfterAddingSmartCharacters",
 		"includeSelectors",
-		"smartTab" ],
+		"smartTab",
+		"askAboutRecommendedPreferences" ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",

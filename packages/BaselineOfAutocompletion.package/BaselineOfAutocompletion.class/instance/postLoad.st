@@ -5,3 +5,4 @@ postLoad
 		ecToolSet register.
 		ToolSet default: ecToolSet.].
 	ECHistory reset.
+	self validateRecommendedPreferences.
