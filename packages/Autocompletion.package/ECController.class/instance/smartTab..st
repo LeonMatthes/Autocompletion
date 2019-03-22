@@ -1,7 +1,7 @@
 smart tabbing
 smartTab: aKeyboardEvent
 
-	^ self isAtBeginningOfLine
+	^ (self editor hasCaret and: [self isAtBeginningOfLine])
 		ifTrue: [false] 
 		ifFalse: [aKeyboardEvent shiftPressed
 			ifTrue: [self reverseSmartTab]
