@@ -3,4 +3,4 @@ initializeSelectors
 
 	self initializeSelectorsFor: clazz.
 	super initializeSelectors.
-	selectors addAll: (ECEntryHook additionalSelectorsFor: self theClass).
+	selectors addAll: (ECEntryHook additionalSelectorsTyped: self theClass).
