@@ -6,5 +6,5 @@ selectionIntervalIn: aTextOrString
 	startIndex >= 0
 		ifTrue: [^ startIndex to: startIndex + ECPreferences smartTabString size - 1].
 
-	startIndex := aTextOrString indexOf: Character space ifAbsent: [aTextOrString size].
+	startIndex := aTextOrString indexOfSubCollection: '  ' startingAt: 1 ifAbsent: [aTextOrString size].
 	^ startIndex to: startIndex - 1
