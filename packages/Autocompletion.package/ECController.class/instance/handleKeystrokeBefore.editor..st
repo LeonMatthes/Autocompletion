@@ -7,10 +7,6 @@ handleKeystrokeBefore: aKeyboardEvent editor: anEditor
 	anEditor ifNil: [^ false].
 	self setModel: self editor model.
 
-	"abort for single character or numeric keys"
-	(self isSimpleKeyPress: aKeyboardEvent)
-		ifTrue: [^ false].
-
 	^ self isMenuOpen
 		ifFalse: [self handleTextShortcuts: aKeyboardEvent]
 		ifTrue: [self handleMenuShortcuts: aKeyboardEvent]

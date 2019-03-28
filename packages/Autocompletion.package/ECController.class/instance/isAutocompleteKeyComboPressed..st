@@ -2,4 +2,4 @@ keyboard-testing
 isAutocompleteKeyComboPressed: aKeyboardEvent
 
 	^ aKeyboardEvent controlKeyPressed
-		and: [self isSpacePressed: aKeyboardEvent]
+		and: [self isSpacePress: aKeyboardEvent]

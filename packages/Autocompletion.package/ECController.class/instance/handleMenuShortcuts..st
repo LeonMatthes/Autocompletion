@@ -54,8 +54,8 @@ handleMenuShortcuts: aKeyboardEvent
 		ifTrue: [menuMorph pageDown.
 			^ true].
 	"Tab or Ctrl-Space"
-	(keyCharacter = Character tab
-			or: [(self isSpacePressed: aKeyboardEvent) & controlKeyPressed])
+	((self isTabPress: aKeyboardEvent)
+			or: [self isAutocompleteKeyComboPressed: aKeyboardEvent])
 		ifTrue: [menuMorph insertSelected
 				ifTrue: [^ true]].
 	"Ctrl-u"

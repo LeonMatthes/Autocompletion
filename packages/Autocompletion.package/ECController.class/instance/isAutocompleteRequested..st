@@ -1,5 +1,5 @@
 keyboard-testing
 isAutocompleteRequested: aKeyboardEvent
 
-	^ (self isTabPressed: aKeyboardEvent)
+	^ (self isTabPress: aKeyboardEvent)
 		and: [aKeyboardEvent controlKeyPressed not]

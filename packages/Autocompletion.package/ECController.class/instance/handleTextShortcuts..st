@@ -9,7 +9,4 @@ handleTextShortcuts: aKeyboardEvent
 		ifTrue: [self openMenuForCurrentEditor.
 			^ false "further processing required (typing character)"].
 
-	(ECPreferences smartTab and: aKeyboardEvent keyCharacter = Character tab and: [aKeyboardEvent anyModifierKeyPressed not])
-		ifTrue: [^ self smartTab: aKeyboardEvent].
-
 	^ self handleSmartInput: aKeyboardEvent

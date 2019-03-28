@@ -1,4 +1,4 @@
 keyboard-testing
-isTabPressed: aKeyboardEvent
+isTabPress: aKeyboardEvent
 
 	^ aKeyboardEvent keyCharacter = Character tab
