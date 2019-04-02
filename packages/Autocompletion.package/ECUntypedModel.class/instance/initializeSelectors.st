@@ -3,7 +3,7 @@ initializeSelectors
 
 	self resetSelectors.
 	super initializeSelectors.
-	ECEntryHook additionalSelectorsUntyped: clazz.
+	selectors addAll: (ECEntryHook additionalSelectorsUntyped: clazz).
 	
 	(includeSelectors and: [ECPreferences includeSelectors])
 		ifFalse: [^ self initializeGlobalsSelectors ].
