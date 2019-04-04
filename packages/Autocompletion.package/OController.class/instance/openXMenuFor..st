@@ -12,7 +12,7 @@ openXMenuFor: anEditor
 	
 	self editor: anEditor.
 	self expand.
-	theMenu := self menuMorph controller: self
+	theMenu := self defaultMenuMorphClass controller: self
 				position: (anEditor selectionPosition: context completionToken).
 	theMenu isClosed ifFalse: [menuMorph := theMenu].
 	menuMorph moveDown; moveDown. 

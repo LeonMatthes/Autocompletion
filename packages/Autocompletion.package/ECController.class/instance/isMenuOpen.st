@@ -1,7 +1,7 @@
 menu morph
 isMenuOpen
 
-	^ self currentMenuMorph
+	^ self menuMorph
 		ifNil: [false]
 		ifNotNil: [(self currentMenuMorph itemsCount > 0)
 			ifFalse: [self closeMenu. false "legacy code with side effects"]

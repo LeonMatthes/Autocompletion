@@ -7,7 +7,7 @@ openMenuFor: anEditor
 	(self model respondsTo: #selectedClassOrMetaClass)
 		ifTrue: [ class := self model selectedClassOrMetaClass ]
 		ifFalse: [ class := nil ].
-		
+
 	self closeMenu.
 	context := self contextClass 
 		controller: self
@@ -18,4 +18,4 @@ openMenuFor: anEditor
 	theMenu := self defaultMenuMorphClass
 		controller: self
 		position: (anEditor selectionPosition: context completionToken).
-	theMenu isClosed ifFalse: [ self currentMenuMorph: theMenu ].
+	theMenu isClosed ifFalse: [ self menuMorph: theMenu ].
