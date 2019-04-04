@@ -8,7 +8,7 @@ smartCharacter: aCharacter
 	theEditor := self editor ifNil: [ ^nil ].
 	theEditor hasSelection ifTrue: [
 		opposite := ECPreferences smartCharactersMapping at: aCharacter ifAbsent: [ ^nil ].
-		theEditor replaceSelectionWith: aCharacter asString, theEditor selection, opposite asString.
+		theEditor replaceSelectionWith: aCharacter asText, theEditor selection, opposite asText.
 		ECPreferences keepSelectionAfterAddingSmartCharacters 
 			ifTrue: [ theEditor selectFrom: theEditor startIndex + 1 to: theEditor stopIndex - 2 ]
 			ifFalse: [ theEditor selectFrom: theEditor stopIndex to: theEditor stopIndex - 1 ].
@@ -31,7 +31,7 @@ smartCharacter: aCharacter
 		theEditor selectFrom: theEditor startIndex + 1 to: theEditor startIndex.
 		self invalidateEditorMorph.
 		^ true ].
-	theEditor replaceSelectionWith: (String with: aCharacter with: opposite).
+	theEditor replaceSelectionWith: (Text with: aCharacter with: opposite).
 	theEditor selectFrom: theEditor startIndex + 1 to: theEditor startIndex.
 	self invalidateEditorMorph.
 	^ true
