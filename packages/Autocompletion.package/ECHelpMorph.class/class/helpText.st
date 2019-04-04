@@ -42,7 +42,7 @@ helpText
 		on: stream.
 	self
 		shortcut: 'shift + tab'
-		text: 'select the last place to insert Text'
+		text: 'select the previous place to insert Text'
 		on: stream.
 		
 	self section: 'menu navigation' on: stream.

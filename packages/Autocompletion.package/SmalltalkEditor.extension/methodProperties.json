@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"isCaretBeforeChar" : "LM 4/4/2019 12:30",
 		"isCaretBehindChar" : "JohnMcKeon 4/5/2012 12:17",
 		"selectionPosition:" : "JohnMcKeon 4/5/2012 12:18",
 		"wordAtCaret" : "JohnMcKeon 4/5/2012 12:18" } }
