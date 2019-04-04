@@ -1,4 +1,5 @@
 accessing
 menuMorph
+"legacy code"
 
-	^ECMenuMorph
+	^ self defaultMenuMorphClass

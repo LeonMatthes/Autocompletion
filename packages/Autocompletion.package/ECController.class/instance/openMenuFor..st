@@ -15,7 +15,7 @@ openMenuFor: anEditor
 		source: anEditor text string
 		position: anEditor startIndex - 1.
 	self editor: anEditor.
-	theMenu := self menuMorph
+	theMenu := self defaultMenuMorphClass
 		controller: self
 		position: (anEditor selectionPosition: context completionToken).
-	theMenu isClosed ifFalse: [ menuMorph := theMenu ]
+	theMenu isClosed ifFalse: [ self currentMenuMorph: theMenu ].
