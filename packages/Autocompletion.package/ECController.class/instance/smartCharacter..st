@@ -25,7 +25,7 @@ smartCharacter: aCharacter
 		^ true ].
 	previous := theEditor text at: theEditor startIndex - 1 ifAbsent: [ Character space ].
 	next := theEditor text at: theEditor startIndex ifAbsent: [ Character space ].
-	(previous isSeparator or: [ next isSeparator ])
+	(previous isSeparator and: [ next isSeparator ])
 		ifFalse: [ ^ nil ].
 	(opposite = aCharacter and: [ next = aCharacter ]) ifTrue: [
 		theEditor selectFrom: theEditor startIndex + 1 to: theEditor startIndex.
