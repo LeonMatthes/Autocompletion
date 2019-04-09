@@ -1,0 +1,4 @@
+*Autocompletion
+substringMatchScore
+	
+	^ 5

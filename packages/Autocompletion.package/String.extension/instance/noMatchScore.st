@@ -1,0 +1,4 @@
+*Autocompletion
+noMatchScore
+
+	^ 0

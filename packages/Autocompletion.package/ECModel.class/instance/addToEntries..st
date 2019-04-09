@@ -1,10 +1,9 @@
 accessing
 addToEntries: anOrderedCollection
 
-	| newEntries narrowSymbol |
-	narrowSymbol := narrowString asSymbol.
+	| newEntries |
 	newEntries := anOrderedCollection reject: [ :entry | 
-		(entry matchNarrowSymbol: narrowSymbol) = 0].
+		(entry matchNarrowString: narrowString) = 0].
 	
 	entries addAll: newEntries.
 	self sortEntries.

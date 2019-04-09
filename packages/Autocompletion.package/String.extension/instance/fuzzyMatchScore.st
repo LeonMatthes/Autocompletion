@@ -1,0 +1,4 @@
+*Autocompletion
+fuzzyMatchScore
+	
+	^ 3

@@ -1,0 +1,4 @@
+*Autocompletion
+frontMatchScore
+	
+	^ 10

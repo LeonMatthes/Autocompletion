@@ -1,0 +1,4 @@
+*Autocompletion
+exactMatchScore
+	
+	^ 20
