@@ -7,7 +7,6 @@ baseline: spec
 			spec
 				package: 'Autocompletion'.
 			spec
-				group: 'default' with: #('core');
-				group: 'core' with: #('Autocompletion').
+				group: 'default' with: #('Autocompletion').
 			spec
 				postLoadDoIt: #postLoad.]

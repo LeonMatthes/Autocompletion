@@ -1,0 +1,4 @@
+accessing
+matchPriority
+
+	^ matchPriority

@@ -2,4 +2,5 @@ private
 reset
 	self resetSelectors.
 	self resetEntries.
-	narrowString := String new
+	narrowString := String new.
+	narrowSymbol := narrowString asSymbol.

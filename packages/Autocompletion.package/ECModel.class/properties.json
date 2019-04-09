@@ -9,7 +9,9 @@
 		"clazz",
 		"selectors",
 		"narrowString",
-		"entries" ],
+		"narrowSymbol",
+		"entries",
+		"hasReceiver" ],
 	"name" : "ECModel",
 	"pools" : [
 		 ],
