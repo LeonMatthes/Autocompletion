@@ -18,6 +18,9 @@ The Autocompletion should now open automatically as you type in the Browser, Wor
 ## Troubleshooting
 If the Autocompletion still behaves the same as the old OCompletion (e.g. no type-guessing), you may have to change a preference to enable it.
 
-Go into Preferences and enable "Use eCompletion instead of OCompletion".
+Go into Preferences and enable "Use Autocompletion instead of OCompletion".
 
-If the Autocompletion is not showing up at all, enable the "Enable OCompletion" preference.
+If the Autocompletion is not showing up at all, enable the "Enable Autocompletion" preference.
+
+If you install OCompletion after installing Autocompletion it will overwrite the Autocompletion code.
+In this case you will have to reinstall Autocompletion.
