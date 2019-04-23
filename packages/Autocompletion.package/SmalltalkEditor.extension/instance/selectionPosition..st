@@ -3,11 +3,9 @@ selectionPosition: aString
 
 	| startIndex |
 	startIndex := self startIndex.
-	^[
-		| bottomLeft topLeft index |
+	^ [ | bottomLeft index |
 		index := startIndex - aString size.
 		self selectInvisiblyFrom: index to: index - 1.
 		bottomLeft := paragraph selectionRects first bottomLeft.
-		topLeft := self morph owner submorphBounds topLeft.
-		topLeft + bottomLeft ]
+		self morph pointInWorld: bottomLeft ]
 			ensure: [ self selectInvisiblyFrom: startIndex to: startIndex - 1 ]
