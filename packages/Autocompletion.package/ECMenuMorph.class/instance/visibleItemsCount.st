@@ -1,4 +1,4 @@
 private
-visibleItemsCount.
+visibleItemsCount
 
 	^ self lastVisible - self firstVisible + 1
