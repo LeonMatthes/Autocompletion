@@ -5,4 +5,5 @@
 		"completionController" : "ul 4/21/2011 03:15",
 		"createCompletionController" : "ul 11/6/2010 05:33",
 		"guessTypeForName:" : "bar 12/13/2004 16:08",
-		"initializeCompletionController" : "ul 4/21/2011 03:07" } }
+		"initializeCompletionController" : "ul 4/21/2011 03:07",
+		"wantsToCloseAutocompletion" : "LM 6/19/2019 13:33" } }
