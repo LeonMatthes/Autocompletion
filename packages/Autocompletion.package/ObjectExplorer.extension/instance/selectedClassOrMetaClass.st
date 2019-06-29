@@ -1,0 +1,4 @@
+*Autocompletion
+selectedClassOrMetaClass
+
+	^ self selectedClass
