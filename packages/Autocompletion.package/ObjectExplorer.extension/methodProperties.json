@@ -2,7 +2,4 @@
 	"class" : {
 		 },
 	"instance" : {
-		"completionController" : "CT 6/29/2019 15:27",
-		"createCompletionController" : "CT 6/29/2019 15:27",
-		"initializeCompletionController" : "CT 6/29/2019 15:27",
-		"selectedClassOrMetaClass" : "CT 6/29/2019 15:34" } }
+		"wantsAutocompletion" : "LM 6/30/2019 14:09" } }

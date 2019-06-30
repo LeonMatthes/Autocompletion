@@ -2,7 +2,4 @@
 	"class" : {
 		 },
 	"instance" : {
-		"completionController" : "ul 4/21/2011 03:15",
-		"createCompletionController" : "ul 11/6/2010 05:33",
-		"guessTypeForName:" : "bar 12/13/2004 16:08",
-		"initializeCompletionController" : "ul 4/21/2011 03:07" } }
+		"wantsAutocompletion" : "LM 6/30/2019 14:09" } }
