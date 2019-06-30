@@ -1,3 +1,4 @@
 *Autocompletion
 guessTypeForName: aString
+
 	^nil

@@ -1,6 +1,6 @@
 *Autocompletion
 completionController
-	
+
 	| controller |
 	controller := self dependents 
 		detect: [ :each | each isKindOf:  ECController ]
@@ -9,4 +9,3 @@ completionController
 			(self triggerEvent: #getCompletionController) ifNotNil: [ :theController |
 				self addDependent: theController ] ].
 	^controller ifNil: [ self initializeCompletionController ]
-	
