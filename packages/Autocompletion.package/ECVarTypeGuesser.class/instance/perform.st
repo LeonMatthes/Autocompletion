@@ -1,6 +1,6 @@
 public
 perform
-	| minPriorityInfo  methodRefs |
+	|  methodRefs typeInfos |
 	variableName isEmpty
 		ifTrue: [^ nil].
 	methodRefs := self methodRefs.
@@ -9,15 +9,8 @@ perform
 	methodRefs isBehavior
 		ifTrue: [^ methodRefs].
 	contextCount := 0.
-	minPriorityInfo := nil.
-	methodRefs do: [:each | 
-		| infosOfMethod |
+	typeInfos := OrderedCollection new.
+	methodRefs do: [:each |
 		self prepare: each.
-		infosOfMethod := self typeOfVarIn: each compiledMethod.
-		(infosOfMethod detectMin: #priority) ifNotNil: [ :possibleMinPrioriotyInfo |
-			minPriorityInfo 
-				ifNil: [ minPriorityInfo := possibleMinPrioriotyInfo ]
-				ifNotNil: [ 
-					minPriorityInfo priority <= possibleMinPrioriotyInfo priority
-						ifFalse: [ minPriorityInfo := possibleMinPrioriotyInfo ] ] ] ].
-	^minPriorityInfo ifNotNil: [ minPriorityInfo type ]
+		typeInfos addAll: (self typeOfVarIn: each compiledMethod)].
+	^ (typeInfos detectMin: #priority) ifNotNil: #type
