@@ -2,6 +2,8 @@ keyboard
 handleMenuShortcuts: aKeyboardEvent
 
 	| theEditor keyCharacter controlKeyPressed commandKeyPressed |
+	aKeyboardEvent shiftPressed ifTrue: [self closeMenu. ^ false].
+	
 	theEditor := self editor.
 	keyCharacter := aKeyboardEvent keyCharacter.
 	controlKeyPressed := aKeyboardEvent controlKeyPressed.
