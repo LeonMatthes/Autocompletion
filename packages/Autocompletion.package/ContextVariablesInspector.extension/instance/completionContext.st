@@ -1,0 +1,4 @@
+*Autocompletion
+completionContext
+
+	^ self object

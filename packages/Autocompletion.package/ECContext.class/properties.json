@@ -18,7 +18,8 @@
 		"controller",
 		"variables",
 		"selectors",
-		"typeInfos" ],
+		"typeInfos",
+		"executionContext" ],
 	"name" : "ECContext",
 	"pools" : [
 		 ],

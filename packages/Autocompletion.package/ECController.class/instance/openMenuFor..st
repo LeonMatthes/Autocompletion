@@ -1,19 +1,22 @@
 menu morph
 openMenuFor: anEditor
 
-	| theMenu class |
+	| theMenu class executionContext |
 
-	"Now I check if the method exist, it prevent for crashing each time a key is pressed"
-	(self model respondsTo: #selectedClassOrMetaClass)
-		ifTrue: [ class := self model selectedClassOrMetaClass ]
-		ifFalse: [ class := nil ].
+	class := (self model respondsTo: #selectedClassOrMetaClass)
+		ifTrue: [ self model selectedClassOrMetaClass ]
+		ifFalse: [ nil ].
+	executionContext := (self model respondsTo: #completionContext)
+		ifTrue: [ self model completionContext ]
+		ifFalse: [ nil ].
 
 	self closeMenu.
 	context := self contextClass 
 		controller: self
 		class: class
 		source: anEditor text string
-		position: anEditor startIndex - 1.
+		position: anEditor startIndex - 1
+		executionContext: executionContext.
 	self editor: anEditor.
 	theMenu := self defaultMenuMorphClass
 		controller: self
