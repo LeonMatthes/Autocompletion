@@ -19,6 +19,8 @@ guessTypeOf: aNumber
 					copyFrom: range start
 					to: range end)
 			onError: [ ^Number ]) class ].
+	(self guessTypeFromContext: (self sourceOf: range))
+		ifNotNil: [:type | ^ type].
 	range isArgument ifTrue: [ ^self guessArgument: range ].
 	range isTemporaryVariable ifTrue: [ ^self guessTempVarClass: range ].
 	range isInstanceVariable ifTrue: [ ^self guessInstVarClass: range ].
