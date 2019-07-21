@@ -1,3 +1,3 @@
 private
 itemsCount
-	^context model entryCount
+	^self model entryCount

@@ -1,3 +1,3 @@
 accessing
 selectedEntry
-	^ context model entries at: self selected
+	^ self model entries at: self selected

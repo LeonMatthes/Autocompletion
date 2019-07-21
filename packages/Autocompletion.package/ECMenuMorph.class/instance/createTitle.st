@@ -1,7 +1,7 @@
 initialization
 createTitle
 	| transformationMorph titleString |
-	titleString := context model title.
+	titleString := self model title.
 	titleString
 		ifNil: [^ self].
 	transformationMorph := TransformationMorph new.

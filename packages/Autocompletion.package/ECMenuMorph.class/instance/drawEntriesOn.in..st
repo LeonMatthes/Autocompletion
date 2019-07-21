@@ -11,7 +11,7 @@ drawEntriesOn: aCanvas in: aRectangle
 				ifTrue: [
 					aCanvas fillRectangle: entryRectangle color: self scrollColor.
 					self detailPosition: entryRectangle topRight - (1@0)].
-			(context model entries at: index) 
+			(self model entries at: index) 
 				drawOn: (ClippingCanvas canvas: aCanvas clipRect: entryRectangle)
 				in: rectangle.
 			rectangle := self prepareRectForNextRow: rectangle].

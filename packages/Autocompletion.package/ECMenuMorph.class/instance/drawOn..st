@@ -8,7 +8,7 @@ drawOn: aCanvas
 	rectangle := rectangle left: rectangle left + 20.
 	self extent: self extent.
 	self drawArrowsOn: aCanvas.
-	context model notEmpty
+	self model notEmpty
 		ifTrue: [self drawEntriesOn: aCanvas in: rectangle].
 	"tweak rectangle to display message"
 	rectangle := rectangle top: (self bounds bottom - self class messageHeight).
