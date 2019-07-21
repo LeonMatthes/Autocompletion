@@ -1,3 +1,3 @@
 private
 firstVisible
-	^firstVisible min: context model entryCount
+	^firstVisible min: self model entryCount

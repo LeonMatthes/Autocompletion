@@ -1,4 +1,4 @@
 actions
 expand
-	context model toggleExpand.
+	self model toggleExpand.
 	self narrowCompletion

@@ -1,7 +1,7 @@
 drawing
 drawMessageOn: aCanvas in: rectangle 
 	self hasMessage ifFalse:[^self].
-	context model isEmpty 
+	self model isEmpty 
 		ifFalse:[
 			aCanvas
 				line: rectangle topLeft + (0 @ 1)

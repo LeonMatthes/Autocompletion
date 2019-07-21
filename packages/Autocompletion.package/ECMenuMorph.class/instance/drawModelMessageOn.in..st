@@ -1,7 +1,7 @@
 drawing
 drawModelMessageOn: aCanvas in: rectangle 
 	| message |
-	message := context model hasMessage
+	message := self model hasMessage
 				ifTrue: [context model message, ' | ', self helpText]
 				ifFalse: [self detailMessage].
 	aCanvas
