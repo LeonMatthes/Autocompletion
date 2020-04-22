@@ -13,7 +13,7 @@ codeCompletionAround: aBlock textMorph: aTextMorph keyStroke: evt
 			so a model may choose to disable Autocompletion in aBlock and therefore return nil afterwards."
 			controller := stringHolder completionController.
 			(controller handleKeystrokeBefore: evt editor: editor)
-				ifTrue: [^ self]].
+				ifTrue: [aTextMorph updateFromParagraph. ^ self]].
 	aBlock value.
 	"sends to keyStroke event handler, if any"
 	"Narrow the completion with any of the keys"
