@@ -10,7 +10,7 @@ handleMenuShortcuts: aKeyboardEvent
 	"Use a caseOf statement with the keyString to make sure the exact shortcut is captured, including all modifiers (ctrl&cmd&opt&shift)"
 	keyString caseOf: {
 		"Home"
-		['<home>'] 		-> [^ menuMorph home ifTrue: [true] ifFalse: [self closeMenu. false]].
+		['<home>'] 	-> [^ menuMorph home ifTrue: [true] ifFalse: [self closeMenu. false]].
 		['<Cmd-up>'] 	-> [^ menuMorph home ifTrue: [true] ifFalse: [self closeMenu. false]].
 		
 		"End"
@@ -30,7 +30,7 @@ handleMenuShortcuts: aKeyboardEvent
 		['<Ctrl-left>'] 	-> [menuMorph detailOpen ifTrue: [menuMorph hideDetail. ^ true]].
 		
 		"Arrow up"
-		['<up>'] -> [menuMorph moveUp. ^ false].
+		['<up>'] -> [menuMorph moveUp. ^ true].
 	
 		"Arrow down"
 		['<down>'] -> [menuMorph moveDown. ^ true].
