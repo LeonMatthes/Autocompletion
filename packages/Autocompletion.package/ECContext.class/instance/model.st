@@ -1,4 +1,4 @@
 accessing
 model
-	model isNil ifTrue: [ model := self createModel ].
-	^ model
+
+	^ model ifNil: [model := self createModel].
