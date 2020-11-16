@@ -4,5 +4,8 @@ setController: aECController class: aClass source: aString position: anInteger
 	theClass := aClass.
 	source := aString.
 	position := anInteger.
-	self createRanges.
-	self compute
+	
+	[self createRanges.
+	self compute]
+		on: Exception
+		do: [:exception | self model handleException: exception]

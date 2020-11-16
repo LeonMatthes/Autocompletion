@@ -1,0 +1,15 @@
+{
+	"category" : "Autocompletion-ECModel",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"helperProcess",
+		"exception" ],
+	"name" : "ECExceptionEntry",
+	"pools" : [
+		 ],
+	"super" : "ECEntry",
+	"type" : "normal" }

@@ -2,7 +2,7 @@ drawing
 drawOn: aCanvas in: aRectangle
 
 	aCanvas
-		drawString: self contentsAsSymbol asString
+		drawString: self contents
 		in: (aRectangle insetBy: 1)
 		font: self selectFont
 		color: self selectColor.

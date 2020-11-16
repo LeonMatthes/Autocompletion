@@ -4,5 +4,5 @@ setController: aECController position: aPoint
 	context := controller context.
 	self createTitle.
 	self position: aPoint - (20 @ 0).
-	self narrowCompletion
+	self postNarrow
 		ifTrue: [self openInWorld]. 
