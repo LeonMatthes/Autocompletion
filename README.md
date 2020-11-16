@@ -12,7 +12,7 @@ If you are a student of the SWA or SWT courses at the HPI you do not have to ins
 Now install the Autocompletion using the following command:
 ```smalltalk
 Metacello new
-	repository: 'github://MrModder/Autocompletion:master/packages';
+	repository: 'github://LeonMatthes/Autocompletion:master/packages';
 	baseline: 'Autocompletion';
 	get;
 	load.
