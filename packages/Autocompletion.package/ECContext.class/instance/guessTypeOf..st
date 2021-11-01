@@ -25,4 +25,6 @@ guessTypeOf: aNumber
 	range isClassVariable ifTrue: [ ^self guessClassVarClass: range ].
 	range isGlobal ifTrue: [ ^self guessGlobal: aNumber ].
 	range isUnary ifTrue: [^ self guessUnary: aNumber].
-	^nil
+	
+	 "If all else fails, ask the model if it knows more... i.e. Workspace binding"
+	^ controller guessTypeFor: (self sourceOf: range)
