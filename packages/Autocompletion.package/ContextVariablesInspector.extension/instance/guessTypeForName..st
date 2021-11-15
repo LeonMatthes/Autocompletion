@@ -2,8 +2,8 @@
 guessTypeForName: aString
 
 	| index |
-	self doItContext ifNil: [^ nil].
+	self doItContext ifNil: [^ super guessTypeForName: aString].
 	index := (self doItContext debuggerMap tempNamesForContext: self doItContext)
 		indexOf: aString
-		ifAbsent: [^ nil].
+		ifAbsent: [^ super guessTypeForName: aString].
 	^ (self doItContext tempAt: index) class
