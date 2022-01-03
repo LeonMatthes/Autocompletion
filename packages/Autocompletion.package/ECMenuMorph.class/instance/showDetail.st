@@ -4,4 +4,5 @@ showDetail
 	self itemsCount isZero ifTrue: [ ^ self ].
 	detailMorph := ECDetailMorph new.
 	self addMorph: detailMorph.
-	self updateDetail
+	self updateDetail.
+	self changed.
