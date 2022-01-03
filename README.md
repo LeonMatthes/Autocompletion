@@ -20,10 +20,11 @@ Metacello new
 
 The Autocompletion should now open automatically as you type in the Browser, Workspace or Debugger.
 
-## Troubleshooting
-If the Autocompletion still behaves the same as the old OCompletion (e.g. no type-guessing), you may have to change a preference to enable it.
+*Note:* For best compatibility, remove OCompletion before installing Autocompletion.
 
-Go into Preferences and enable "Use Autocompletion instead of OCompletion".
+## Troubleshooting
+OCompletion and Autocompletion are no longer compatible with each other.
+If you have OCompletion installed in your image, please uninstall OCompletion and reinstall Autocompletion to see if the issue is solved that way.
 
 If the Autocompletion is not showing up at all, enable the "Enable Autocompletion" preference.
 
