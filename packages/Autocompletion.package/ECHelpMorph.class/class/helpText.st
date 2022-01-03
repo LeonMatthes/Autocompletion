@@ -2,7 +2,7 @@ help-text
 helpText
 	| stream |
 	stream := TextStream on: Text new.
-	self section: 'character completion' on: stream.
+	self section: 'Character Completion' on: stream.
 	self
 		shortcut: 'works on'
 		text: ' [] {} () <> '''' ""'
@@ -17,7 +17,7 @@ helpText
 		on: stream.
 		
 		
-	self section: 'open/close menu' on: stream.
+	self section: 'Open/Close Menu' on: stream.
 	self
 		shortcut: 'ctrl-space'
 		text: 'open the completion menu'
@@ -45,7 +45,7 @@ helpText
 		text: 'select the previous place to insert Text'
 		on: stream.
 		
-	self section: 'menu navigation' on: stream.
+	self section: 'Menu Navigation' on: stream.
 	self
 		shortcut: 'Arrows up/down'
 		text: 'move the selection up and down'
@@ -60,7 +60,7 @@ helpText
 		on: stream.
 		
 		
-	self section: 'show details and browse' on: stream.
+	self section: 'Show Details and Browse' on: stream.
 	self
 		shortcut: 'ctrl + right arrow (detail closed)'
 		text: 'show details about the selected item. This may be the type of the variable, the source of a method or the implementors of the selector.'
@@ -75,7 +75,7 @@ helpText
 		on: stream.
 	
 
-	self section: 'changing menu contents' on: stream.
+	self section: 'Changing Menu Contents' on: stream.
 	self
 		shortcut: 'ctrl-u'
 		text: 'switch to untyped mode in a typed menu'
