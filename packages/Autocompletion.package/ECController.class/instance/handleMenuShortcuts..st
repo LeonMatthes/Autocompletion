@@ -1,7 +1,7 @@
 keyboard
 handleMenuShortcuts: aKeyboardEvent
 
-	| theEditor keyString |
+	| theEditor keyString isShortcut key |
 	theEditor := self editor.
 	keyString := aKeyboardEvent keyString.
 	
@@ -16,39 +16,45 @@ handleMenuShortcuts: aKeyboardEvent
 		"End"
 		['<end>'] 				-> [^ menuMorph end ifTrue: [true] ifFalse: [self closeMenu. false]].
 		['<Cmd-down>'] 	-> [^ menuMorph end ifTrue: [true] ifFalse: [self closeMenu. false]].
-	
-		"Help menu"
-		['<Cmd-h>'] 	-> [menuMorph help.  ^ true].
-		['<Ctrl-h>']		-> [menuMorph help.  ^ true].
 		
-		"Right-Arrow"
-		['<Cmd-right>']	-> [menuMorph showDetail. ^ true].
-		['<Ctrl-right>']		-> [menuMorph showDetail. ^ true].
+		"Page up"
+		['<Ctrl-pageUp>' "Windows"] 	-> [menuMorph pageUp. ^ true].
+		['<pageUp>' "Linux"] 			-> [menuMorph pageUp. ^ true].
+		['<Cmd-up>' "Mac"] 			-> [menuMorph pageUp. ^ true].
 		
-		"Left Arrow"
-		['<Cmd-left>'] 	-> [menuMorph detailOpen ifTrue: [menuMorph hideDetail. ^ true]].
-		['<Ctrl-left>'] 	-> [menuMorph detailOpen ifTrue: [menuMorph hideDetail. ^ true]].
-		
+		"Page down"
+		['<Ctrl-pageDown>' "Windows"] 	-> [menuMorph pageDown. ^ true].
+		['<pageDown>' "Linux"] 			-> [menuMorph pageDown. ^ true].
+		['<Cmd-down>' "Mac"]			-> [menuMorph pageDown. ^ true].
+				
 		"Arrow up"
 		['<up>'] -> [menuMorph moveUp. ^ true].
 	
 		"Arrow down"
 		['<down>'] -> [menuMorph moveDown. ^ true].
-	
-		"Page up"
-		['<Ctrl-pageUp>' "Windows"] 	-> [menuMorph pageUp. ^ true].
-		['<Cmd-up>' "Mac"] 			-> [menuMorph pageUp. ^ true].
-		
-		"Page down"
-		['<Ctrl-pageDown>' "Windows"] 	-> [menuMorph pageDown. ^ true].
-		['<Cmd-down>' "Mac"]				-> [menuMorph pageDown. ^ true].
-
-		"Ctrl-u"
-		['<Cmd-u>'] -> [menuMorph switchToUntyped. ^ true].
-
-		"Crtl-t"
-		['<Cmd-t>'] -> [menuMorph expand. ^ true].
 	} otherwise: [].
+	
+	"With these shortcuts we don't care which specific modifier is pressed. The modifier key is different on the different operating systems anyway. So just do it this way."
+	key := aKeyboardEvent keyCharacter.
+	isShortcut := aKeyboardEvent controlKeyPressed or: [aKeyboardEvent commandKeyPressed].
+	isShortcut ifTrue: [
+		key caseOf: {
+			"Help menu"
+			[$h] 	-> [menuMorph help.  ^ true].
+			
+			"Right-Arrow"
+			[Character arrowRight]		-> [menuMorph showDetail. ^ true].
+			
+			"Left Arrow"
+			[Character arrowLeft] 	-> [menuMorph detailOpen ifTrue: [menuMorph hideDetail. ^ true]].
+
+			"Ctrl-u"
+			[$u] -> [menuMorph switchToUntyped. ^ true].
+
+			"Crtl-t"
+			[$t] -> [menuMorph expand. ^ true].
+		} otherwise: []
+	].
 
 	"Tab or Ctrl-Space"
 	((self isTabPress: aKeyboardEvent)
