@@ -22,6 +22,11 @@ The Autocompletion should now open automatically as you type in the Browser, Wor
 
 *Note:* For best compatibility, remove OCompletion before installing Autocompletion.
 
+## Supported Squeak versions
+Autocompletion aims to support:
+- Squeak 5.3
+- Squeak 6.0
+
 ## Troubleshooting
 OCompletion and Autocompletion are no longer compatible with each other.
 If you have OCompletion installed in your image, please uninstall OCompletion and reinstall Autocompletion to see if the issue is solved that way.
