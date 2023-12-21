@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 label: firstString title: secondString description: thirdString 
 	^ self new 
 		setLabel: firstString

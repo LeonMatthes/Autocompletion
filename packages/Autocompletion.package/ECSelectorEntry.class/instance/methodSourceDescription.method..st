@@ -1,4 +1,4 @@
-as yet unclassified
+detail information
 methodSourceDescription: aClass method: aCompiledMethod 
 	| styler |
 	styler := SHTextStylerST80 new.

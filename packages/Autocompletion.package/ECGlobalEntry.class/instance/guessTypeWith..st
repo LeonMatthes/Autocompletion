@@ -1,4 +1,4 @@
-as yet unclassified
+type guessing
 guessTypeWith: anECContext 
 	| globalEntry |
 	globalEntry := Smalltalk at: contents ifAbsent: [^ nil].

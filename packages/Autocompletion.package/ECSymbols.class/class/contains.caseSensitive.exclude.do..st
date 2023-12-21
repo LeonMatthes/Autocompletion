@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 contains: aString caseSensitive: aBoolean exclude: aCollection do: aBlock
 
 	| separators |

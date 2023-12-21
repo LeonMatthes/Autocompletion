@@ -1,4 +1,4 @@
-as yet unclassified
+comparing
 <= anECEntry 
 
 	^ self lastUse = anECEntry lastUse

@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 browseWith: anECContext
 	type := self guessTypeWith: anECContext.
 	type

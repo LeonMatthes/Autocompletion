@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 height
 	^ ECMenuMorph itemHeight * 15.5

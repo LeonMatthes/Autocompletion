@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 width
 	^ ECMenuMorph itemWidth * 2.0

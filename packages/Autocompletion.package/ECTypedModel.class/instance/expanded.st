@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 expanded 
 
 	^ expanded ifNil: [false]

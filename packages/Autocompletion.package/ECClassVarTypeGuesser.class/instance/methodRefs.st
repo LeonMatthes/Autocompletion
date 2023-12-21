@@ -1,4 +1,4 @@
-as yet unclassified
+public
 methodRefs
 	| theClass classVarAssoc |
 	theClass := receiverClass classThatDefinesClassVariable: variableName.

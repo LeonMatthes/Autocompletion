@@ -1,4 +1,4 @@
-as yet unclassified
+drawing
 selectColor
 
 	^ Color red darker

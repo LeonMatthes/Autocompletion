@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 contentsAsSymbol
 	^ self contents asSymbol 

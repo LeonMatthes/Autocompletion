@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 matchNarrowString: aString
 
 	"Return a really high match priority here.
