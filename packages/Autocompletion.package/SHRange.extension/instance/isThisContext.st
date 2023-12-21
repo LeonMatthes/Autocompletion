@@ -1,0 +1,4 @@
+*Autocompletion
+isThisContext
+	
+	^type == #thisContext

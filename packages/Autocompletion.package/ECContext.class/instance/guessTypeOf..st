@@ -11,6 +11,7 @@ guessTypeOf: aNumber
 		^theClass ifNotNil: [
 			(theClass isKindOf: Class) ifTrue: [ "It may be a Trait or something else."
 				theClass superclass ] ] ].
+	range isThisContext ifTrue: [ ^Context ].
 	range asType ifNotNil: [ :type | "Constant"
 		type == Number ifFalse: [ ^type ].
 		^(SqNumberParser 
