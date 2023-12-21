@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 contains: aString caseSensitive: aBoolean exclude: aCollection do: aBlock
 
 	| separators |
@@ -7,5 +7,6 @@ contains: aString caseSensitive: aBoolean exclude: aCollection do: aBlock
 	separators := CharacterSet separators.
 	Symbol allSymbolTablesDo: [:each | 
 		((each indexOfAnyOf: separators startingAt: 1) = 0 and: [(aCollection includes: each) not]
-			and: [each includesSubstring: aString caseSensitive: aBoolean])
+			and: [(each includesSubstring: aString caseSensitive: aBoolean)
+			and: [self isValidSelector: each]])
 				ifTrue: [aBlock value: each]].

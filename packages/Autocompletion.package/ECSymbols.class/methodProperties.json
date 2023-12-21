@@ -1,6 +1,7 @@
 {
 	"class" : {
 		"contains:caseSensitive:do:" : "LM 3/20/2019 15:22",
-		"contains:caseSensitive:exclude:do:" : "LM 3/20/2019 15:22" },
+		"contains:caseSensitive:exclude:do:" : "ct 12/21/2023 21:00",
+		"isValidSelector:" : "ct 12/21/2023 21:05" },
 	"instance" : {
 		 } }

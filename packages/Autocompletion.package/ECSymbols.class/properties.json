@@ -3,7 +3,7 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
+		"SymbolValidities" ],
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
