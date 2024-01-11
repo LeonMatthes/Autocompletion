@@ -1,5 +1,5 @@
 # Autocompletion
-While technically a fork of [OCompletion](http://www.squeaksource.com/@NZSwcxtqxYUKxV3I/oO0ot5Cp), this project aims to reenable the awesome features of [eCompletion](http://uncomplex.net/ecompletion/) like type-guessing, suggestions based on context, and static analysis. 
+While technically a fork of [OCompletion](https://www.squeaksource.com/OCompletion.html), this project aims to reenable the awesome features of [eCompletion](http://uncomplex.net/ecompletion/) like type-guessing, suggestions based on context, and static analysis. 
 It also updates eCompletion to modern standards.
 But as we don't want to loose the pros of OCompletion, Autocompletion also incorporates the basic idea of OCompletion (sorting entries by last use) in order to get the best of both worlds.
 The ultimate goal would be to completely remove OCompletion from the project as it no longer has any benefit over the improved eCompletion (except for some optimizations which are still To-Do).
