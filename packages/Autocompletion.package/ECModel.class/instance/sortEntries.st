@@ -1,9 +1,13 @@
 accessing
 sortEntries
 
-	entries sort: [:aEntry :bEntry | | aPriority bPriority |
-		aPriority := aEntry matchNarrowString: narrowString.
-		bPriority := bEntry matchNarrowString: narrowString.
-		aPriority = bPriority
-			ifTrue: [aEntry <= bEntry]
-			ifFalse: [aPriority >= bPriority]]
+	| seen |
+	entries sort:
+		[:entry | entry matchNarrowString: narrowString] descending
+			, [:aEntry :bEntry | aEntry <= bEntry ifTrue: [-1] ifFalse: [0]]
+			, [:aEntry :bEntry | (aEntry contents compare: bEntry contents caseSensitive: ECPreferences caseSensitive) - 2].
+	
+	"remove any duplicates"
+	seen := Set new.
+	entries removeAllSuchThat: [:entry |
+		(seen ifAbsentAdd: entry contents) not].
