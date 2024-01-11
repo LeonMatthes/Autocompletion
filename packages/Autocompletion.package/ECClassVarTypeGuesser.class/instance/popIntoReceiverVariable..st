@@ -1,3 +1,3 @@
-as yet unclassified
+instruction decoding
 popIntoReceiverVariable: offset 
 	self reset

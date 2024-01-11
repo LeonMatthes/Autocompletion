@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 browseWith: anECContext
 
 	"For inspiration, see StandardToolSet class>>#debugException:"

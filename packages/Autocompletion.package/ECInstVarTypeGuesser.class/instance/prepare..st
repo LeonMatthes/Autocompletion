@@ -1,4 +1,4 @@
-as yet unclassified
+bytecode decoding
 prepare: aCompiledMethod 
 	| theClass |
 	super prepare: aCompiledMethod.

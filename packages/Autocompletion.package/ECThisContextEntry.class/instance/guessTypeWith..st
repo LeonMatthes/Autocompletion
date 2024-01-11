@@ -1,3 +1,3 @@
 type guessing
 guessTypeWith: anECContext 
-	^ anECContext theClass
+	^ Context

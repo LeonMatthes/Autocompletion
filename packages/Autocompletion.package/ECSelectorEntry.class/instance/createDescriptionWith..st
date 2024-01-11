@@ -1,4 +1,4 @@
-as yet unclassified
+detail information
 createDescriptionWith: anECContext 
 	^ self
 		findMethodWith: anECContext

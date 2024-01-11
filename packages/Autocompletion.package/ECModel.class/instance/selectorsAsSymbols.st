@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 selectorsAsSymbols
 
 	^ selectors collect: [:each | each contentsAsSymbol]

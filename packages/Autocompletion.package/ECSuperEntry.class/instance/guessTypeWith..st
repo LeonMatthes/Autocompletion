@@ -1,3 +1,3 @@
-as yet unclassified
+type guessing
 guessTypeWith: anECContext 
 	^ anECContext theClass ifNotNil: [anECContext theClass superclass]

@@ -1,3 +1,3 @@
-as yet unclassified
+testing
 isDefinedByMessageSend
 	^kind == 2
