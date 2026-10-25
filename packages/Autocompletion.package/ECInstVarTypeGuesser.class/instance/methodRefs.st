@@ -1,4 +1,4 @@
-as yet unclassified 
+public
 methodRefs
 	| theClass selectors |
 	theClass := receiverClass classThatDefinesInstanceVariable: variableName.

@@ -1,8 +1,12 @@
 *Autocompletion
 completionAdditionals
 
-	^ self doItContext ifNotNil: [:context |
-		context tempNames withIndexCollect: [:each :index |
+	^ self doItContext ifNotNil: [:ctxt |
+		(ctxt tempNames withIndexCollect: [:each :index |
 			ECLocalEntry
 				contents: each
-				type: (index <= context numArgs ifTrue: [#patternArg] ifFalse: [#patternTempVar])]]
+				type: (index <= ctxt numArgs ifTrue: [#patternArg] ifFalse: [#patternTempVar])])
+					copyWithFirst:
+						(ECLocalEntry
+							contents: #ThisContext
+							type: #patternArg)]
